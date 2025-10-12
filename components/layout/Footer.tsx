@@ -150,6 +150,23 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Designer Credit Section */}
+      <div className="bg-gradient-to-r from-blue-600 to-blue-700 py-3">
+        <div className="container-custom text-center">
+          <p className="text-white text-sm">
+            Designed with ❤️ and maintained by{" "}
+            <a
+              href="https://shldnet.qzz.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold hover:text-blue-200 transition-colors underline"
+            >
+              SHLDNet
+            </a>
+          </p>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -161,7 +178,7 @@ const Footer = () => {
               Privacy Policy
             </Link>
             <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
-              Terms & Conditions
+              Terms of Service
             </Link>
           </div>
         </div>
