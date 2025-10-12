@@ -69,7 +69,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-accent-DEFAULT rounded-full blur-3xl opacity-20 animate-pulse"></div>
                 <img
-                  src="https://scontent-vie1-1.cdninstagram.com/v/t51.2885-19/483658866_657302566749225_1972531173840858552_n.jpg"
+                  src="https://content3.jdmagicbox.com/comp/haldwani/u3/9999p5946.5946.171202100803.l1u3/catalogue/pi-square-neev-the-foundation-coaching-centre-haldwani-ho-haldwani-home-tutors-b94eq2pksj.jpg"
                   alt="Neev Foundation"
                   className="relative rounded-2xl shadow-2xl animate-float"
                 />
