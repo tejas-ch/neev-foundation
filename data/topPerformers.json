@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Arjun Patel",
+    "exam": "JEE Advanced",
+    "year": 2024,
+    "rank": "AIR 47",
+    "percentage": "99.8%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "JEE Two Year Program",
+    "testimonial": "Neev's faculty made complex concepts simple. The regular tests helped me stay consistent."
+  },
+  {
+    "id": 2,
+    "name": "Sneha Iyer",
+    "exam": "NEET",
+    "year": 2024,
+    "rank": "AIR 156",
+    "percentage": "99.6%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "NEET Two Year Program",
+    "testimonial": "Best Biology teaching I've ever experienced. Dr. Priya ma'am is incredible!"
+  },
+  {
+    "id": 3,
+    "name": "Rahul Sharma",
+    "exam": "Class 12 Board (CBSE)",
+    "year": 2024,
+    "rank": "School Topper",
+    "percentage": "98.2%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "Board Excellence Program",
+    "testimonial": "Systematic preparation and excellent study material helped me score high in boards."
+  },
+  {
+    "id": 4,
+    "name": "Ananya Singh",
+    "exam": "JEE Main",
+    "year": 2024,
+    "rank": "99.5 Percentile",
+    "percentage": "99.5%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "JEE One Year Program",
+    "testimonial": "The doubt sessions and DPPs were game-changers for my preparation."
+  },
+  {
+    "id": 5,
+    "name": "Karan Desai",
+    "exam": "Class 10 Board (CBSE)",
+    "year": 2024,
+    "rank": "District Topper",
+    "percentage": "99%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "Foundation Course",
+    "testimonial": "Teachers at Neev made learning fun and easy. Thank you for the strong foundation!"
+  },
+  {
+    "id": 6,
+    "name": "Priyanka Joshi",
+    "exam": "NEET",
+    "year": 2024,
+    "rank": "AIR 342",
+    "percentage": "99.4%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "NEET Repeater Batch",
+    "testimonial": "Even as a repeater, Neev gave me confidence and the right strategy to crack NEET."
+  },
+  {
+    "id": 7,
+    "name": "Aditya Kumar",
+    "exam": "IMO (International Math Olympiad)",
+    "year": 2023,
+    "rank": "Gold Medal",
+    "percentage": "Level 2 Qualifier",
+    "image": "/images/toppers/default-student.svg",
+    "course": "Olympiad Program",
+    "testimonial": "Ms. Kavita ma'am's Olympiad training was outstanding!"
+  },
+  {
+    "id": 8,
+    "name": "Divya Nair",
+    "exam": "JEE Advanced",
+    "year": 2023,
+    "rank": "AIR 234",
+    "percentage": "99.2%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "JEE Two Year Program",
+    "testimonial": "Neev's teaching methodology and test series prepared me thoroughly for JEE."
+  },
+  {
+    "id": 9,
+    "name": "Rohan Gupta",
+    "exam": "NTSE",
+    "year": 2023,
+    "rank": "State Rank 12",
+    "percentage": "Selected for Stage 2",
+    "image": "/images/toppers/default-student.svg",
+    "course": "NTSE Program",
+    "testimonial": "The MAT and SAT sessions were incredibly helpful for NTSE preparation."
+  },
+  {
+    "id": 10,
+    "name": "Ishita Malhotra",
+    "exam": "Class 12 Board (CBSE)",
+    "year": 2023,
+    "rank": "99% Scorer",
+    "percentage": "99%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "Board Excellence Program",
+    "testimonial": "Regular tests and personalized attention helped me achieve my dream score!"
+  }
+]

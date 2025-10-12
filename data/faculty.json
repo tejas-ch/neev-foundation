@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Rajesh Kumar",
+    "subject": "Physics",
+    "qualification": "Ph.D. (IIT Delhi), B.Tech",
+    "experience": "15+ years",
+    "specialization": "JEE Advanced Physics, Mechanics & Electromagnetism",
+    "quote": "Physics is not about formulas, it's about understanding nature's beautiful laws.",
+    "image": "/images/faculty/default-male.svg",
+    "achievements": [
+      "Former IIT Faculty",
+      "Author of 3 physics textbooks",
+      "Produced 50+ IIT selections"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Prof. Anjali Sharma",
+    "subject": "Chemistry",
+    "qualification": "M.Sc. (Gold Medalist), B.Ed.",
+    "experience": "12+ years",
+    "specialization": "Organic Chemistry & NEET Chemistry",
+    "quote": "Chemistry is the study of change, and every student can transform their understanding with the right guidance.",
+    "image": "/images/faculty/default-female.svg",
+    "achievements": [
+      "100% pass rate in batches",
+      "Expert in NCERT-based teaching",
+      "Published research papers"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mr. Vikram Singh",
+    "subject": "Mathematics",
+    "qualification": "M.Sc. Mathematics (IIT Kanpur)",
+    "experience": "18+ years",
+    "specialization": "JEE Mathematics, Calculus & Algebra",
+    "quote": "Mathematics is not about numbers, it's about logical thinking and problem-solving.",
+    "image": "/images/faculty/default-male.svg",
+    "achievements": [
+      "20+ AIR holders under guidance",
+      "National level math trainer",
+      "Olympiad mentor"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Dr. Priya Mehta",
+    "subject": "Biology",
+    "qualification": "MBBS, M.D.",
+    "experience": "10+ years",
+    "specialization": "NEET Biology, Botany & Zoology",
+    "quote": "Biology is the most powerful science of life. Master it, and you master the future of medicine.",
+    "image": "/images/faculty/default-female.svg",
+    "achievements": [
+      "NEET AIR 1 producer",
+      "Medical practitioner & educator",
+      "NCERT expert"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mr. Amit Verma",
+    "subject": "English & Social Studies",
+    "qualification": "M.A. English, B.Ed.",
+    "experience": "14+ years",
+    "specialization": "Board Exams, Communication Skills",
+    "quote": "Language is the road map of a culture. Learn it well, express yourself better.",
+    "image": "/images/faculty/default-male.svg",
+    "achievements": [
+      "100% board exam success",
+      "Soft skills trainer",
+      "Published author"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Ms. Kavita Reddy",
+    "subject": "Mathematics (Foundation)",
+    "qualification": "M.Sc. Mathematics, B.Ed.",
+    "experience": "11+ years",
+    "specialization": "Classes 6-10, Olympiad Math",
+    "quote": "Every child can excel in mathematics with patience, practice, and the right approach.",
+    "image": "/images/faculty/default-female.svg",
+    "achievements": [
+      "IMO Gold medalists coach",
+      "Foundation expert",
+      "Parent's favorite teacher"
+    ]
+  }
+]

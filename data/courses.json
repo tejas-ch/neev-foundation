@@ -1,0 +1,134 @@
+[
+  {
+    "id": "foundation-6-10",
+    "title": "Foundation Course",
+    "subtitle": "Classes 6-10",
+    "description": "Build strong fundamentals in Mathematics, Science, and English. Prepare for board exams and competitive entrance tests.",
+    "duration": "Full Academic Year",
+    "targetAudience": "Students in Classes 6-10",
+    "icon": "FaBookReader",
+    "features": [
+      "Comprehensive coverage of NCERT syllabus",
+      "Regular assessments and doubt sessions",
+      "Interactive learning methods",
+      "Study material and assignments"
+    ],
+    "subjects": ["Mathematics", "Science", "English", "Social Studies"],
+    "batchTypes": ["Regular Classroom", "Weekend Batches"],
+    "highlights": [
+      "Expert faculty with 10+ years experience",
+      "Small batch sizes for personalized attention",
+      "Regular parent-teacher meetings"
+    ]
+  },
+  {
+    "id": "jee-preparation",
+    "title": "JEE Preparation",
+    "subtitle": "IIT-JEE Main & Advanced",
+    "description": "Comprehensive JEE coaching with focus on conceptual clarity, problem-solving techniques, and exam strategies.",
+    "duration": "1-2 Years",
+    "targetAudience": "Class 11-12 & Droppers",
+    "icon": "FaGraduationCap",
+    "features": [
+      "Complete JEE syllabus coverage",
+      "Regular mock tests and analysis",
+      "Daily practice problems (DPP)",
+      "Previous year papers discussion"
+    ],
+    "subjects": ["Physics", "Chemistry", "Mathematics"],
+    "batchTypes": ["Two Year Program", "One Year Program", "Crash Course"],
+    "highlights": [
+      "IITian and experienced faculty",
+      "Advanced problem-solving sessions",
+      "All India Test Series"
+    ]
+  },
+  {
+    "id": "neet-preparation",
+    "title": "NEET Preparation",
+    "subtitle": "Medical Entrance Coaching",
+    "description": "Expert NEET coaching focusing on Biology, Physics, and Chemistry with NCERT-based approach and test series.",
+    "duration": "1-2 Years",
+    "targetAudience": "Class 11-12 & Droppers",
+    "icon": "FaMicroscope",
+    "features": [
+      "NCERT-based teaching methodology",
+      "Comprehensive Biology coverage",
+      "Weekly tests and practice sessions",
+      "Doubt clearing workshops"
+    ],
+    "subjects": ["Physics", "Chemistry", "Biology", "Zoology", "Botany"],
+    "batchTypes": ["Two Year Program", "One Year Program", "Repeater Batch"],
+    "highlights": [
+      "NEET specialist faculty",
+      "Focus on NCERT and previous years",
+      "Regular revision classes"
+    ]
+  },
+  {
+    "id": "board-excellence",
+    "title": "Board Excellence Program",
+    "subtitle": "Class 10 & 12 Board Preparation",
+    "description": "Score 95%+ in board exams with our systematic approach, regular tests, and comprehensive study material.",
+    "duration": "Full Academic Year",
+    "targetAudience": "Class 10 & 12 Students",
+    "icon": "FaTrophy",
+    "features": [
+      "Chapter-wise test series",
+      "Board exam pattern practice",
+      "Handwritten notes and solutions",
+      "Last-minute revision sessions"
+    ],
+    "subjects": ["All Board Subjects"],
+    "batchTypes": ["Regular Classes", "Crash Course"],
+    "highlights": [
+      "90%+ success rate",
+      "Previous years board papers practice",
+      "Exam tips and strategies"
+    ]
+  },
+  {
+    "id": "olympiad-ntse",
+    "title": "Olympiad & NTSE",
+    "subtitle": "Competitive Exam Preparation",
+    "description": "Specialized coaching for Olympiads (IMO, NSO, IEO) and NTSE with focus on logical reasoning and conceptual depth.",
+    "duration": "6-12 Months",
+    "targetAudience": "Classes 6-10",
+    "icon": "FaMedal",
+    "features": [
+      "Olympiad-specific problem solving",
+      "Mental ability and reasoning",
+      "Mock tests based on exam pattern",
+      "Speed and accuracy training"
+    ],
+    "subjects": ["Mathematics", "Science", "Mental Ability", "SAT/MAT"],
+    "batchTypes": ["Weekend Batches", "Summer Programs"],
+    "highlights": [
+      "Multiple medal winners every year",
+      "Specialized Olympiad trainers",
+      "Comprehensive study resources"
+    ]
+  },
+  {
+    "id": "crash-course",
+    "title": "Crash Course Programs",
+    "subtitle": "Rapid Exam Preparation",
+    "description": "Intensive crash courses for last-minute preparation with focus on important topics, shortcuts, and exam strategies.",
+    "duration": "2-3 Months",
+    "targetAudience": "All competitive exams",
+    "icon": "FaBolt",
+    "features": [
+      "Focus on high-weightage topics",
+      "Quick revision techniques",
+      "Speed solving methods",
+      "Exam-oriented approach"
+    ],
+    "subjects": ["Subject-specific or combined"],
+    "batchTypes": ["Pre-Board Crash", "Pre-JEE Crash", "Pre-NEET Crash"],
+    "highlights": [
+      "Intensive coaching in short duration",
+      "Expert tips and tricks",
+      "Daily test series"
+    ]
+  }
+]

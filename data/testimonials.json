@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Rajesh Patel",
+    "role": "Parent of Arjun Patel (JEE AIR 47)",
+    "testimonial": "Neev transformed my son's academic journey. The faculty is dedicated, and the results speak for themselves.",
+    "rating": 5,
+    "image": "/images/testimonials/default-parent.svg"
+  },
+  {
+    "id": 2,
+    "name": "Meera Iyer",
+    "role": "Parent of Sneha Iyer (NEET AIR 156)",
+    "testimonial": "Best coaching institute in the city! The personalized attention and expert teaching helped my daughter achieve her dream.",
+    "rating": 5,
+    "image": "/images/testimonials/default-parent.svg"
+  },
+  {
+    "id": 3,
+    "name": "Vikram Singh",
+    "role": "Parent of Karan Desai (Class 10 Topper)",
+    "testimonial": "My son's confidence and grades improved dramatically after joining Neev. Highly recommended!",
+    "rating": 5,
+    "image": "/images/testimonials/default-parent.svg"
+  },
+  {
+    "id": 4,
+    "name": "Anita Sharma",
+    "role": "Parent of Divya Nair",
+    "testimonial": "The systematic approach and regular parent-teacher meetings kept us informed about our daughter's progress. Excellent institute!",
+    "rating": 5,
+    "image": "/images/testimonials/default-parent.svg"
+  }
+]
