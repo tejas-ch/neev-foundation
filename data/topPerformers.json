@@ -1,6 +1,28 @@
 [
   {
     "id": 1,
+    "name": "Yathartha Mehra",
+    "exam": "Class 12 Board (CBSE)",
+    "year": 2025,
+    "rank": "All India Rank 1",
+    "percentage": "97.67%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "Board Excellence Program",
+    "testimonial": "Achieving AIR 1 in CBSE was a dream come true! Neev's systematic approach and excellent faculty guidance made it possible."
+  },
+  {
+    "id": 2,
+    "name": "Hem Paliwal",
+    "exam": "JEE Advanced",
+    "year": 2024,
+    "rank": "IIT Delhi Admission",
+    "percentage": "99.99%",
+    "image": "/images/toppers/default-student.svg",
+    "course": "JEE Two Year Program",
+    "testimonial": "Scoring 99.99% and getting into IIT Delhi was my goal, and Neev helped me achieve it with their excellent teaching methodology!"
+  },
+  {
+    "id": 3,
     "name": "Arjun Patel",
     "exam": "JEE Advanced",
     "year": 2024,
@@ -11,7 +33,7 @@
     "testimonial": "Neev's faculty made complex concepts simple. The regular tests helped me stay consistent."
   },
   {
-    "id": 2,
+    "id": 4,
     "name": "Sneha Iyer",
     "exam": "NEET",
     "year": 2024,
@@ -22,7 +44,7 @@
     "testimonial": "Best Biology teaching I've ever experienced. Dr. Priya ma'am is incredible!"
   },
   {
-    "id": 3,
+    "id": 5,
     "name": "Rahul Sharma",
     "exam": "Class 12 Board (CBSE)",
     "year": 2024,
@@ -33,7 +55,7 @@
     "testimonial": "Systematic preparation and excellent study material helped me score high in boards."
   },
   {
-    "id": 4,
+    "id": 6,
     "name": "Ananya Singh",
     "exam": "JEE Main",
     "year": 2024,
@@ -44,7 +66,7 @@
     "testimonial": "The doubt sessions and DPPs were game-changers for my preparation."
   },
   {
-    "id": 5,
+    "id": 7,
     "name": "Karan Desai",
     "exam": "Class 10 Board (CBSE)",
     "year": 2024,
@@ -55,7 +77,7 @@
     "testimonial": "Teachers at Neev made learning fun and easy. Thank you for the strong foundation!"
   },
   {
-    "id": 6,
+    "id": 8,
     "name": "Priyanka Joshi",
     "exam": "NEET",
     "year": 2024,
@@ -66,7 +88,7 @@
     "testimonial": "Even as a repeater, Neev gave me confidence and the right strategy to crack NEET."
   },
   {
-    "id": 7,
+    "id": 9,
     "name": "Aditya Kumar",
     "exam": "IMO (International Math Olympiad)",
     "year": 2023,
@@ -77,7 +99,7 @@
     "testimonial": "Ms. Kavita ma'am's Olympiad training was outstanding!"
   },
   {
-    "id": 8,
+    "id": 10,
     "name": "Divya Nair",
     "exam": "JEE Advanced",
     "year": 2023,
@@ -88,7 +110,7 @@
     "testimonial": "Neev's teaching methodology and test series prepared me thoroughly for JEE."
   },
   {
-    "id": 9,
+    "id": 11,
     "name": "Rohan Gupta",
     "exam": "NTSE",
     "year": 2023,
@@ -99,7 +121,7 @@
     "testimonial": "The MAT and SAT sessions were incredibly helpful for NTSE preparation."
   },
   {
-    "id": 10,
+    "id": 12,
     "name": "Ishita Malhotra",
     "exam": "Class 12 Board (CBSE)",
     "year": 2023,

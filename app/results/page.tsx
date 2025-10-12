@@ -6,9 +6,9 @@ import { FaTrophy, FaMedal, FaStar } from "react-icons/fa";
 import topPerformers from "@/data/topPerformers.json";
 
 export default function ResultsPage() {
-  const [selectedYear, setSelectedYear] = useState("2024");
+  const [selectedYear, setSelectedYear] = useState("2025");
   
-  const years = ["2024", "2023"];
+  const years = ["2025", "2024", "2023"];
   const filteredToppers = topPerformers.filter((topper) => topper.year.toString() === selectedYear);
 
   return (
@@ -207,11 +207,11 @@ export default function ResultsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-accent-DEFAULT to-accent-dark text-white p-8 rounded-xl"
+              className="bg-gradient-to-br from-orange-500 to-orange-600 text-white p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-3xl font-bold mb-2">NEET Success</h3>
               <p className="text-5xl font-bold mb-4">40+</p>
-              <p className="text-gray-100">
+              <p className="text-orange-100">
                 Students admitted to AIIMS, JIPMER, and top medical colleges
               </p>
             </motion.div>
