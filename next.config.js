@@ -5,6 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/neev-foundation',
+  assetPrefix: '/neev-foundation/',
   trailingSlash: true,
 }
 

@@ -128,11 +128,11 @@ export default function ResultsPage() {
                 {/* Image */}
                 <div className="relative h-64 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center overflow-hidden">
                   <img
-                    src="/images/faculty/default-male.svg"
+                    src={topper.image}
                     alt={topper.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
-                      e.currentTarget.src = "/images/toppers/default-student.svg";
+                      e.currentTarget.src = "/neev-foundation/images/toppers/default-student.svg";
                     }}
                   />
                 </div>
