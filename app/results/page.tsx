@@ -132,7 +132,7 @@ export default function ResultsPage() {
                     alt={topper.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
-                      e.currentTarget.src = "/NEEV-foundation/images/toppers/default-student.svg";
+                      e.currentTarget.src = "/images/toppers/default-student.svg";
                     }}
                   />
                 </div>
