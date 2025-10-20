@@ -43,7 +43,7 @@ export default function TermsOfServicePage() {
               </div>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  By enrolling in courses at Neev – THE FOUNDATION or using our services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+                  By enrolling in courses at NEEV – THE FOUNDATION or using our services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
                 </p>
                 <p>
                   These terms apply to all students, parents, guardians, and visitors who use our educational services, facilities, or website.
@@ -57,7 +57,7 @@ export default function TermsOfServicePage() {
                 <h2 className="text-3xl font-bold text-gray-900">Educational Services</h2>
               </div>
               <div className="space-y-4 text-gray-700">
-                <p>Neev – THE FOUNDATION provides educational services including but not limited to:</p>
+                <p>NEEV – THE FOUNDATION provides educational services including but not limited to:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Foundation courses for classes 6-10</li>
                   <li>JEE and NEET preparation programs</li>
@@ -72,7 +72,7 @@ export default function TermsOfServicePage() {
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Student Responsibilities</h2>
               <div className="space-y-4 text-gray-700">
-                <p>As a student at Neev, you agree to:</p>
+                <p>As a student at NEEV, you agree to:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Attend classes regularly and punctually</li>
                   <li>Complete assignments and homework on time</li>
@@ -109,7 +109,7 @@ export default function TermsOfServicePage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Intellectual Property</h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  All course materials, study notes, videos, and content provided by Neev are protected by intellectual property rights and are for personal educational use only.
+                  All course materials, study notes, videos, and content provided by NEEV are protected by intellectual property rights and are for personal educational use only.
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Materials cannot be shared, copied, or distributed without permission</li>
@@ -127,7 +127,7 @@ export default function TermsOfServicePage() {
               </div>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  While we strive to provide the best educational services, Neev – THE FOUNDATION makes no guarantees regarding:
+                  While we strive to provide the best educational services, NEEV – THE FOUNDATION makes no guarantees regarding:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Specific academic results or examination outcomes</li>
@@ -163,7 +163,7 @@ export default function TermsOfServicePage() {
                   For any questions regarding these Terms of Service, please contact us:
                 </p>
                 <div className="bg-primary-50 p-4 rounded-lg">
-                  <p><strong>Email:</strong> legal@neev-foundation.edu</p>
+                  <p><strong>Email:</strong> legal@NEEV-foundation.edu</p>
                   <p><strong>Phone:</strong> +91 9876543210</p>
                   <p><strong>Address:</strong> 123 Education Street, Learning District, City - 456789</p>
                 </div>

@@ -38,7 +38,7 @@ const Footer = () => {
                 <span className="text-primary-700 font-bold text-xl">N</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold">Neev</span>
+                <span className="text-xl font-bold">NEEV</span>
                 <span className="text-xs text-gray-300">THE FOUNDATION</span>
               </div>
             </div>
@@ -171,7 +171,7 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Neev – THE FOUNDATION. All rights reserved.
+            © {new Date().getFullYear()} NEEV – THE FOUNDATION. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">

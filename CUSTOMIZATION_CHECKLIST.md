@@ -1,4 +1,4 @@
-# ✅ Customization Checklist - Neev Foundation Website
+# ✅ Customization Checklist - NEEV Foundation Website
 
 Use this checklist to customize your website with real data.
 
@@ -239,5 +239,5 @@ Refer to these files:
 
 **Good luck with your customization! 🎉**
 
-*Neev – THE FOUNDATION*  
+*NEEV – THE FOUNDATION*  
 *"Building Strong Foundations for a Brighter Future"*

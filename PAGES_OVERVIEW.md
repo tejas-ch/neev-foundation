@@ -1,4 +1,4 @@
-# 📱 Website Pages Overview - Neev Foundation
+# 📱 Website Pages Overview - NEEV Foundation
 
 Visual guide to all pages and their content.
 
@@ -22,7 +22,7 @@ Visual guide to all pages and their content.
    - 50+ Expert Faculty
 
 3. **About Preview**
-   - Brief intro to Neev
+   - Brief intro to NEEV
    - 4 feature cards:
      - Expert Faculty (50+ experienced educators)
      - Small Batches (Personalized attention)
@@ -148,7 +148,7 @@ Visual guide to all pages and their content.
 **Route:** http://localhost:3000/about
 
 ### Sections:
-1. **Hero:** "About Neev – THE FOUNDATION"
+1. **Hero:** "About NEEV – THE FOUNDATION"
 
 2. **Mission & Vision:** 2 large cards
    - Mission (bullseye icon)
@@ -232,7 +232,7 @@ Visual guide to all pages and their content.
   - Tagline (right side)
 
 - **Main Navigation:**
-  - Logo (left): Neev - THE FOUNDATION
+  - Logo (left): NEEV - THE FOUNDATION
   - Links: Home | Courses | Faculty | Results | About Us | Contact
   - Button: "Enroll Now"
   - Mobile: Hamburger menu

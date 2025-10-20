@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide - Neev Foundation Website
+# 🚀 Quick Start Guide - NEEV Foundation Website
 
 ## ⚡ Getting Started in 3 Steps
 
@@ -134,7 +134,7 @@ npm run dev
 
 ## 📞 Need Help?
 
-Contact: **neevthefoundation619@gmail.com**
+Contact: **NEEVthefoundation619@gmail.com**
 
 ---
 

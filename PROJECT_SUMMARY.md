@@ -1,4 +1,4 @@
-# 🎓 Neev Foundation Website - PROJECT SUMMARY
+# 🎓 NEEV Foundation Website - PROJECT SUMMARY
 
 ## ✅ Project Complete!
 
@@ -105,7 +105,7 @@ All content is easily editable via JSON files:
 ### Customization (Priority):
 1. **Update Contact Info** (`data/siteConfig.json`)
    - Phone: +91 95481 56544
-   - Email: neevthefoundation619@gmail.com
+   - Email: NEEVthefoundation619@gmail.com
    - Address: Add your actual address
    - Social media URLs
 
@@ -218,7 +218,7 @@ npm run dev
 
 ## 🎉 You're All Set!
 
-Your **Neev – THE FOUNDATION** website is ready to impress!
+Your **NEEV – THE FOUNDATION** website is ready to impress!
 
 ### What You Have:
 ✅ Professional, modern educational website  
@@ -241,10 +241,10 @@ Your **Neev – THE FOUNDATION** website is ready to impress!
 If you need any modifications or have questions:
 - Review the README.md for detailed documentation
 - Check QUICKSTART.md for quick tips
-- Email: neevthefoundation619@gmail.com
+- Email: NEEVthefoundation619@gmail.com
 
 ---
 
-**🏆 Built with excellence for Neev – THE FOUNDATION**
+**🏆 Built with excellence for NEEV – THE FOUNDATION**
 
 *"Building Strong Foundations for a Brighter Future"*

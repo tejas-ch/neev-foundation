@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
               </div>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  At Neev – THE FOUNDATION, we collect information to provide better educational services to our students and parents:
+                  At NEEV – THE FOUNDATION, we collect information to provide better educational services to our students and parents:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Personal Information:</strong> Name, email address, phone number, and contact details when you inquire about our courses or enroll.</li>
@@ -112,7 +112,7 @@ export default function PrivacyPolicyPage() {
                   If you have any questions about this Privacy Policy or how we handle your personal information, please contact us:
                 </p>
                 <div className="bg-primary-50 p-4 rounded-lg">
-                  <p><strong>Email:</strong> privacy@neev-foundation.edu</p>
+                  <p><strong>Email:</strong> privacy@NEEV-foundation.edu</p>
                   <p><strong>Phone:</strong> +91 9876543210</p>
                   <p><strong>Address:</strong> 123 Education Street, Learning District, City - 456789</p>
                 </div>

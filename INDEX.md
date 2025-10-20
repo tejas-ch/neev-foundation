@@ -1,6 +1,6 @@
-# 📚 Documentation Index - Neev Foundation Website
+# 📚 Documentation Index - NEEV Foundation Website
 
-Welcome! This is your complete guide to the Neev Foundation website.
+Welcome! This is your complete guide to the NEEV Foundation website.
 
 ---
 
@@ -135,7 +135,7 @@ Welcome! This is your complete guide to the Neev Foundation website.
 ## 📂 File Structure Overview
 
 ```
-neev/
+NEEV/
 ├── 📚 DOCUMENTATION
 │   ├── README.md                      ← Complete documentation
 │   ├── QUICKSTART.md                  ← Quick start guide
@@ -259,7 +259,7 @@ A: Put them in `public/images/` and reference as `/images/filename.jpg`
 1. Check the relevant documentation file
 2. Review error messages carefully
 3. Search for the error online
-4. Contact: neevthefoundation619@gmail.com
+4. Contact: NEEVthefoundation619@gmail.com
 
 ---
 
@@ -306,5 +306,5 @@ Everything you need is documented here. Follow the guides in order for the best 
 ---
 
 *Last Updated: October 2025*  
-*Neev – THE FOUNDATION*  
+*NEEV – THE FOUNDATION*  
 *"Building Strong Foundations for a Brighter Future"*

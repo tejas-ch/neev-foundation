@@ -76,8 +76,8 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-accent-DEFAULT rounded-full blur-3xl opacity-20 animate-pulse"></div>
                 <img
-                  src="https://content3.jdmagicbox.com/comp/haldwani/u3/9999p5946.5946.171202100803.l1u3/catalogue/pi-square-neev-the-foundation-coaching-centre-haldwani-ho-haldwani-home-tutors-b94eq2pksj.jpg"
-                  alt="Neev Foundation"
+                  src="https://content3.jdmagicbox.com/comp/haldwani/u3/9999p5946.5946.171202100803.l1u3/catalogue/pi-square-NEEV-the-foundation-coaching-centre-haldwani-ho-haldwani-home-tutors-b94eq2pksj.jpg"
+                  alt="NEEV Foundation"
                   className="relative rounded-2xl shadow-2xl animate-float"
                 />
               </div>
@@ -173,13 +173,13 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <h2 className="section-title">
-                About <span className="gradient-text">Neev Foundation</span>
+                About <span className="gradient-text">NEEV Foundation</span>
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 {siteConfig.about}
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                With over 15 years of excellence in education, Neev has been the foundation
+                With over 15 years of excellence in education, NEEV has been the foundation
                 for thousands of successful students. Our innovative teaching methods combined
                 with experienced faculty ensure every student reaches their full potential.
               </p>
@@ -412,7 +412,7 @@ export default function Home() {
               Ready to Build Your Foundation?
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
-              Join thousands of successful students who achieved their dreams with Neev's proven methodology
+              Join thousands of successful students who achieved their dreams with NEEV's proven methodology
             </p>
 
             {/* Special offer banner */}

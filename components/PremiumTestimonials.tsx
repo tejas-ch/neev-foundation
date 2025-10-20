@@ -19,8 +19,8 @@ const premiumTestimonials: TestimonialProps[] = [
     name: "Yathartha Mehra",
     course: "Class 10 Board (CBSE)",
     rating: 5,
-    testimonial: "Achieving AIR 1 in CBSE was a dream come true! Neev's systematic approach and excellent faculty guidance made it possible.",
-    image: "/neev-foundation/images/toppers/yathartha.jpg",
+    testimonial: "Achieving AIR 1 in CBSE was a dream come true! NEEV's systematic approach and excellent faculty guidance made it possible.",
+    image: "/NEEV-foundation/images/toppers/yathartha.jpg",
     achievement: "All India Rank 1",
     year: 2025
   },
@@ -28,8 +28,8 @@ const premiumTestimonials: TestimonialProps[] = [
     name: "Hem Paliwal",
     course: "JEE Advanced",
     rating: 5,
-    testimonial: "Scoring 99.99% and getting into IIT Delhi was my goal, and Neev helped me achieve it with their excellent teaching methodology!",
-    image: "/neev-foundation/images/toppers/hem-iit.jpg",
+    testimonial: "Scoring 99.99% and getting into IIT Delhi was my goal, and NEEV helped me achieve it with their excellent teaching methodology!",
+    image: "/NEEV-foundation/images/toppers/hem-iit.jpg",
     achievement: "IIT Delhi",
     year: 2024
   },
@@ -37,8 +37,8 @@ const premiumTestimonials: TestimonialProps[] = [
     name: "Deepu Da",
     course: "Government Exam Preparation",
     rating: 5,
-    testimonial: "Neev's teachers do not compromise with our stomach along with our study. They keep giving us treats like samosas, etc to replenish our hunger. This helped me to focus on my goals without having to waste my time eating food. Definitely the best!",
-    image: "/neev-foundation/images/toppers/deepu_da.jpg",
+    testimonial: "NEEV's teachers do not compromise with our stomach along with our study. They keep giving us treats like samosas, etc to replenish our hunger. This helped me to focus on my goals without having to waste my time eating food. Definitely the best!",
+    image: "/NEEV-foundation/images/toppers/deepu_da.jpg",
     achievement: "Government Job",
     year: 2024
   },
@@ -46,7 +46,7 @@ const premiumTestimonials: TestimonialProps[] = [
     name: "Priya Sharma",
     course: "NEET Preparation",
     rating: 5,
-    testimonial: "The faculty's dedication and personalized attention helped me crack NEET with an excellent rank. The study environment at Neev is unmatched!",
+    testimonial: "The faculty's dedication and personalized attention helped me crack NEET with an excellent rank. The study environment at NEEV is unmatched!",
     achievement: "AIIMS Selection",
     year: 2024
   },
@@ -54,7 +54,7 @@ const premiumTestimonials: TestimonialProps[] = [
     name: "Arjun Kumar",
     course: "JEE Main",
     rating: 5,
-    testimonial: "From average student to IIT qualifier - Neev transformed my academic journey completely. The doubt-clearing sessions were particularly helpful.",
+    testimonial: "From average student to IIT qualifier - NEEV transformed my academic journey completely. The doubt-clearing sessions were particularly helpful.",
     achievement: "IIT Bombay",
     year: 2024
   }
@@ -146,7 +146,7 @@ export const PremiumTestimonialsCarousel = () => {
             Success Stories
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-            Hear from our students who achieved their dreams with Neev
+            Hear from our students who achieved their dreams with NEEV
           </p>
         </motion.div>
 

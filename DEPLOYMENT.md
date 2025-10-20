@@ -1,20 +1,20 @@
-# 🚀 Deployment Guide - Neev Foundation Website
+# 🚀 Deployment Guide - NEEV Foundation Website
 
 ## Option 1: Deploy to GitHub Pages (Recommended)
 
 ### Step 1: Create GitHub Repository
 1. Go to https://github.com/new
-2. Create a new repository named `neev-foundation` (or any name)
+2. Create a new repository named `NEEV-foundation` (or any name)
 3. Don't initialize with README
 
 ### Step 2: Push Your Code
 ```bash
-cd d:\Projects\neev
+cd d:\Projects\NEEV
 git init
 git add .
-git commit -m "Initial commit: Neev Foundation website"
+git commit -m "Initial commit: NEEV Foundation website"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/neev-foundation.git
+git remote add origin https://github.com/YOUR_USERNAME/NEEV-foundation.git
 git push -u origin main
 ```
 
@@ -28,11 +28,11 @@ git push -u origin main
 ### Step 4: Access Your Website
 Your site will be live at:
 - Custom domain: `https://yourdomain.com` (if configured)
-- GitHub Pages: `https://YOUR_USERNAME.github.io/neev-foundation/`
+- GitHub Pages: `https://YOUR_USERNAME.github.io/NEEV-foundation/`
 
 **Note:** If using GitHub Pages subdirectory, update `next.config.js`:
 ```javascript
-basePath: '/neev-foundation',  // Use your repo name
+basePath: '/NEEV-foundation',  // Use your repo name
 ```
 
 ---
@@ -46,19 +46,19 @@ npm install -g vercel
 
 ### Step 2: Deploy
 ```bash
-cd d:\Projects\neev
+cd d:\Projects\NEEV
 vercel
 ```
 
 Follow the prompts:
 - Link to existing project? **No**
-- Project name: **neev-foundation**
+- Project name: **NEEV-foundation**
 - Directory: **./  (press Enter)**
 - Build command: **npm run build (press Enter)**
 
 ### Step 3: Access Your Website
 Vercel will provide you with a URL like:
-`https://neev-foundation.vercel.app`
+`https://NEEV-foundation.vercel.app`
 
 **Advantages:**
 - ✅ Automatic HTTPS

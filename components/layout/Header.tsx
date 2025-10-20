@@ -64,7 +64,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl md:text-2xl font-bold text-primary-700">
-                Neev
+                NEEV
               </span>
               <span className="text-xs text-gray-600 -mt-1">
                 THE FOUNDATION

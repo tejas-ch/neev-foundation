@@ -132,7 +132,7 @@ export default function ResultsPage() {
                     alt={topper.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
-                      e.currentTarget.src = "/neev-foundation/images/toppers/default-student.svg";
+                      e.currentTarget.src = "/NEEV-foundation/images/toppers/default-student.svg";
                     }}
                   />
                 </div>
@@ -185,7 +185,7 @@ export default function ResultsPage() {
               Our Success Stories
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Every success story at Neev is a testament to hard work, dedication, and the right guidance.
+              Every success story at NEEV is a testament to hard work, dedication, and the right guidance.
               We are proud of each student who trusted us with their dreams.
             </p>
           </motion.div>
@@ -249,7 +249,7 @@ export default function ResultsPage() {
               Be the Next Success Story
             </h2>
             <p className="text-xl mb-8 text-gray-100">
-              Join Neev and write your own success story
+              Join NEEV and write your own success story
             </p>
             <a href="/contact" className="btn-primary bg-accent-DEFAULT hover:bg-accent-dark">
               Start Your Journey

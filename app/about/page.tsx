@@ -29,7 +29,7 @@ export default function AboutPage() {
   ];
 
   const milestones = [
-    { year: "2008", event: "Neev Foundation established" },
+    { year: "2008", event: "NEEV Foundation established" },
     { year: "2010", event: "First batch of 50 students" },
     { year: "2015", event: "Expanded to multiple courses & 500+ students" },
     { year: "2018", event: "Produced first AIR 1 in NEET" },
@@ -49,7 +49,7 @@ export default function AboutPage() {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              About Neev – THE FOUNDATION
+              About NEEV – THE FOUNDATION
             </h1>
             <p className="text-xl text-gray-100">
               Building strong foundations for a brighter future since 2008
@@ -128,13 +128,13 @@ export default function AboutPage() {
               className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
             >
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Neev – THE FOUNDATION was established in 2008 with a simple yet powerful vision: to provide
+                NEEV – THE FOUNDATION was established in 2008 with a simple yet powerful vision: to provide
                 quality education that builds strong foundations for students' futures. What started as a
                 small coaching center with just 50 students has grown into one of the region's most trusted
                 educational institutions.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Our name "Neev" means "foundation" in Hindi, and that's exactly what we do – we build solid
+                Our name "NEEV" means "foundation" in Hindi, and that's exactly what we do – we build solid
                 foundations in Mathematics, Science, and other subjects that help students excel not just in
                 exams, but in life. Over the years, we've helped thousands of students achieve their dreams
                 of getting into IITs, AIIMS, NITs, and other premier institutions.
@@ -257,14 +257,14 @@ export default function AboutPage() {
                   </div>
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
                     Education is not just about clearing exams – it's about building character, nurturing
-                    curiosity, and empowering young minds to dream big and achieve bigger. At Neev, we are
+                    curiosity, and empowering young minds to dream big and achieve bigger. At NEEV, we are
                     committed to providing not just quality education, but also mentorship, guidance, and
                     support that shapes future leaders.
                   </p>
                   <p className="text-gray-700 text-lg leading-relaxed">
                     I am proud of every student who has walked through our doors and achieved their dreams.
                     Your success is our success, and we will continue to innovate and improve to serve you
-                    better. Thank you for trusting Neev with your future.
+                    better. Thank you for trusting NEEV with your future.
                   </p>
                 </div>
               </div>
@@ -286,7 +286,7 @@ export default function AboutPage() {
               Be Part of Our Success Story
             </h2>
             <p className="text-xl mb-8 text-gray-100">
-              Join thousands of successful students who chose Neev
+              Join thousands of successful students who chose NEEV
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary bg-accent-DEFAULT hover:bg-accent-dark">

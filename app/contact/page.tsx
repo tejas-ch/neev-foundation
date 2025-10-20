@@ -306,7 +306,7 @@ export default function ContactPage() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Neev Foundation Location"
+            title="NEEV Foundation Location"
           ></iframe>
         </div>
       </section>

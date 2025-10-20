@@ -1,10 +1,10 @@
-# Neev – THE FOUNDATION
+# NEEV – THE FOUNDATION
 
 A premium, multi-page educational coaching website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
 ## 🎓 About
 
-**Neev – THE FOUNDATION** is a professional educational coaching institute website featuring:
+**NEEV – THE FOUNDATION** is a professional educational coaching institute website featuring:
 - Comprehensive course offerings (JEE, NEET, Foundation, Board Excellence, Olympiad)
 - Expert faculty profiles
 - Top performers showcase
@@ -24,7 +24,7 @@ A premium, multi-page educational coaching website built with Next.js, TypeScrip
 ## 📁 Project Structure
 
 ```
-neev/
+NEEV/
 ├── app/                    # Next.js App Router pages
 │   ├── about/             # About Us page
 │   ├── contact/           # Contact page
@@ -241,7 +241,7 @@ jobs:
 ## 📞 Support
 
 For any issues or customization requests:
-- Email: neevthefoundation619@gmail.com
+- Email: NEEVthefoundation619@gmail.com
 - Phone: +91 95481 56544
 
 ## 📝 License
@@ -250,4 +250,4 @@ This project is proprietary and confidential.
 
 ---
 
-**Built with ❤️ for Neev – THE FOUNDATION**
+**Built with ❤️ for NEEV – THE FOUNDATION**
