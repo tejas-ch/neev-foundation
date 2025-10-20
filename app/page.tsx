@@ -12,8 +12,15 @@ import {
   FaChalkboardTeacher,
   FaUsers,
   FaAward,
-  FaRocket
+  FaRocket,
+  FaStar,
+  FaChartLine,
+  FaCrown,
+  FaFire
 } from "react-icons/fa";
+import { StatCard, AnimatedProgressBar } from "@/components/AnimatedComponents";
+import { PremiumTestimonialsCarousel } from "@/components/PremiumTestimonials";
+import { AwardsAndCertifications } from "@/components/AwardsAndCertifications";
 import siteConfig from "@/data/siteConfig.json";
 import courses from "@/data/courses.json";
 import topPerformers from "@/data/topPerformers.json";
@@ -79,26 +86,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="bg-white py-12 shadow-lg -mt-8 relative z-20">
+      {/* Premium Stats Section */}
+      <section className="bg-gradient-to-r from-gray-50 to-white py-16 shadow-xl -mt-8 relative z-20">
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {siteConfig.stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
-              </motion.div>
-            ))}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent mb-4">
+              Our Success Story
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Transforming dreams into reality with proven results and excellence
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <StatCard 
+              number="15000+" 
+              label="Students Taught" 
+              icon={<FaUsers />} 
+              index={0}
+              gradient="from-blue-500 to-blue-700"
+            />
+            <StatCard 
+              number="98%" 
+              label="Success Rate" 
+              icon={<FaTrophy />} 
+              index={1}
+              gradient="from-green-500 to-green-700"
+            />
+            <StatCard 
+              number="2500+" 
+              label="IIT/NEET Selections" 
+              icon={<FaCrown />} 
+              index={2}
+              gradient="from-purple-500 to-purple-700"
+            />
+            <StatCard 
+              number="50+" 
+              label="Expert Faculty" 
+              icon={<FaChalkboardTeacher />} 
+              index={3}
+              gradient="from-orange-500 to-orange-700"
+            />
           </div>
+
+          {/* Success Metrics */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="mt-16 bg-white rounded-3xl p-8 shadow-2xl border border-gray-100"
+          >
+            <h3 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-primary-600 to-accent-DEFAULT bg-clip-text text-transparent">
+              Achievement Metrics 2024-25
+            </h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <AnimatedProgressBar percentage={96} label="JEE Advanced Success" color="bg-gradient-to-r from-blue-500 to-blue-600" delay={200} />
+                <AnimatedProgressBar percentage={94} label="NEET Selection Rate" color="bg-gradient-to-r from-green-500 to-green-600" delay={400} />
+                <AnimatedProgressBar percentage={99} label="Board Exam Excellence" color="bg-gradient-to-r from-purple-500 to-purple-600" delay={600} />
+              </div>
+              <div>
+                <AnimatedProgressBar percentage={92} label="Olympiad Qualifiers" color="bg-gradient-to-r from-orange-500 to-orange-600" delay={800} />
+                <AnimatedProgressBar percentage={88} label="Top 1000 Ranks" color="bg-gradient-to-r from-red-500 to-red-600" delay={1000} />
+                <AnimatedProgressBar percentage={95} label="Student Satisfaction" color="bg-gradient-to-r from-pink-500 to-pink-600" delay={1200} />
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -295,84 +355,137 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-white">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="section-title">
-              What <span className="gradient-text">Parents Say</span>
-            </h2>
-            <p className="section-subtitle">
-              Trusted by thousands of families across the region
-            </p>
-          </motion.div>
+      {/* Premium Testimonials Carousel */}
+      <PremiumTestimonialsCarousel />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={testimonial.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="card p-6"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="text-accent-DEFAULT text-xl">★</span>
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-4 italic">
-                  "{testimonial.testimonial}"
-                </p>
-                <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div>
-                    <div className="font-bold text-gray-900">{testimonial.name}</div>
-                    <div className="text-sm text-gray-600">{testimonial.role}</div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Awards and Certifications */}
+      <AwardsAndCertifications />
 
-      {/* CTA Section */}
+      {/* Premium CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/patterns/dots.svg')] opacity-10"></div>
+        
+        {/* Floating elements */}
+        <motion.div
+          animate={{ 
+            y: [0, -20, 0],
+            rotate: [0, 5, 0]
+          }}
+          transition={{ 
+            duration: 6, 
+            repeat: Infinity, 
+            ease: "easeInOut"
+          }}
+          className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full"
+        ></motion.div>
+        <motion.div
+          animate={{ 
+            y: [0, 20, 0],
+            rotate: [0, -5, 0]
+          }}
+          transition={{ 
+            duration: 8, 
+            repeat: Infinity, 
+            ease: "easeInOut"
+          }}
+          className="absolute bottom-20 right-10 w-16 h-16 bg-accent-light/20 rounded-full"
+        ></motion.div>
+
         <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto"
+            className="text-center max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+              className="text-8xl mb-6"
+            >
+              🚀
+            </motion.div>
+            
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-accent-light to-white bg-clip-text text-transparent">
               Ready to Build Your Foundation?
             </h2>
-            <p className="text-xl mb-8 text-gray-100">
-              Join thousands of successful students who achieved their dreams with Neev
+            <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
+              Join thousands of successful students who achieved their dreams with Neev's proven methodology
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary bg-accent-DEFAULT hover:bg-accent-dark">
-                Enroll Now
-              </Link>
-              <Link href="/contact" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white">
-                Book Free Counselling
-              </Link>
-            </div>
+
+            {/* Special offer banner */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4, type: "spring", stiffness: 150 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-r from-accent-DEFAULT to-accent-dark rounded-2xl p-6 mb-8 border-2 border-accent-light/30"
+            >
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <span className="text-3xl">⚡</span>
+                <span className="text-2xl font-bold">Limited Time Offer</span>
+                <span className="text-3xl">⚡</span>
+              </div>
+              <p className="text-lg mb-2">Get <span className="text-3xl font-bold">FREE</span> counselling session</p>
+              <p className="text-sm opacity-80">+ Free study materials worth ₹5,000</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              viewport={{ once: true }}
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            >
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link 
+                  href="/contact" 
+                  className="bg-accent-DEFAULT hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-2xl hover:shadow-accent-DEFAULT/25 text-lg flex items-center gap-3"
+                >
+                  <span>🎯</span>
+                  Enroll Now
+                  <span>→</span>
+                </Link>
+              </motion.div>
+              
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link 
+                  href="/contact" 
+                  className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 font-semibold py-4 px-8 rounded-xl transition-all duration-300 backdrop-blur-sm text-lg flex items-center gap-3"
+                >
+                  <span>📞</span>
+                  Book Free Counselling
+                </Link>
+              </motion.div>
+            </motion.div>
+
+            {/* Trust indicators */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8 }}
+              viewport={{ once: true }}
+              className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+            >
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold">15+</div>
+                <div className="text-sm opacity-80">Years Experience</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold">15K+</div>
+                <div className="text-sm opacity-80">Students Taught</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold">98%</div>
+                <div className="text-sm opacity-80">Success Rate</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold">50+</div>
+                <div className="text-sm opacity-80">Expert Faculty</div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
