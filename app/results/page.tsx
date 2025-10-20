@@ -4,13 +4,17 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaTrophy, FaMedal, FaStar } from "react-icons/fa";
 import topPerformers from "@/data/topPerformers.json";
-import { processImageData } from "@/lib/utils";
+import { processImageData, getAssetPath } from "@/lib/utils";
 
 export default function ResultsPage() {
   const [selectedYear, setSelectedYear] = useState("2025");
   
   const years = ["2025", "2024", "2023"];
-  const processedToppers = processImageData(topPerformers);
+  // Process image data at render time to ensure basePath is applied
+  const processedToppers = topPerformers.map(topper => ({
+    ...topper,
+    image: getAssetPath(topper.image)
+  }));
   const filteredToppers = processedToppers.filter((topper) => topper.year.toString() === selectedYear);
 
   return (
@@ -134,7 +138,7 @@ export default function ResultsPage() {
                     alt={topper.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
-                      e.currentTarget.src = processImageData([{image: "/images/toppers/default-student.svg"}])[0].image;
+                      e.currentTarget.src = getAssetPath("/images/toppers/default-student.svg");
                     }}
                   />
                 </div>
