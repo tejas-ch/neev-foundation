@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/NEEV-foundation',
-  assetPrefix: '/NEEV-foundation/',
+  basePath: '/neev-foundation',
+  assetPrefix: '/neev-foundation/',
   trailingSlash: true,
 }
 

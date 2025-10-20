@@ -98,6 +98,23 @@ html {
   .section-subtitle {
     @apply text-lg md:text-xl text-gray-600 mb-12;
   }
+
+  /* Fallback for static export - ensure content is visible */
+  [style*="opacity:0"] {
+    opacity: 1 !important;
+  }
+  
+  [style*="transform:translateX"] {
+    transform: none !important;
+  }
+  
+  [style*="transform:translateY"] {
+    transform: none !important;
+  }
+  
+  [style*="transform:scale(0)"] {
+    transform: none !important;
+  }
 }
 
 /* Custom scrollbar */
