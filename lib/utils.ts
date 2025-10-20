@@ -14,12 +14,24 @@ export function getImagePath(path: string): string {
 
 // Alternative approach: Use Next.js basePath from config
 export function getAssetPath(path: string): string {
-  const basePath = '/neev-foundation'; // This should match next.config.js
+  const basePath = process.env.NODE_ENV === 'production' ? '/neev-foundation' : '';
   
-  // Remove leading slash if present
-  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  // Remove leading slash if present and add it back with basePath
+  const cleanPath = path.startsWith('/') ? path : `/${path}`;
   
-  return process.env.NODE_ENV === 'production' 
-    ? `${basePath}/${cleanPath}`
-    : `/${cleanPath}`;
+  return `${basePath}${cleanPath}`;
+}
+
+// Process image data for components
+export function processImageData<T extends { image: string }>(data: T[]): T[] {
+  return data.map(item => ({
+    ...item,
+    image: getAssetPath(item.image)
+  }));
+}
+
+// Get CSS background image URL with proper basePath
+export function getBackgroundImageUrl(imagePath: string): string {
+  const fullPath = getAssetPath(imagePath);
+  return `url('${fullPath}')`;
 }

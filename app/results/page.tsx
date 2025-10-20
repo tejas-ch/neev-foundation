@@ -4,12 +4,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaTrophy, FaMedal, FaStar } from "react-icons/fa";
 import topPerformers from "@/data/topPerformers.json";
+import { processImageData } from "@/lib/utils";
 
 export default function ResultsPage() {
   const [selectedYear, setSelectedYear] = useState("2025");
   
   const years = ["2025", "2024", "2023"];
-  const filteredToppers = topPerformers.filter((topper) => topper.year.toString() === selectedYear);
+  const processedToppers = processImageData(topPerformers);
+  const filteredToppers = processedToppers.filter((topper) => topper.year.toString() === selectedYear);
 
   return (
     <div>
@@ -132,7 +134,7 @@ export default function ResultsPage() {
                     alt={topper.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
-                      e.currentTarget.src = "/images/toppers/default-student.svg";
+                      e.currentTarget.src = processImageData([{image: "/images/toppers/default-student.svg"}])[0].image;
                     }}
                   />
                 </div>

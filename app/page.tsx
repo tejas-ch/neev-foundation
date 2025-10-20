@@ -25,6 +25,7 @@ import siteConfig from "@/data/siteConfig.json";
 import courses from "@/data/courses.json";
 import topPerformers from "@/data/topPerformers.json";
 import testimonials from "@/data/testimonials.json";
+import { processImageData, getBackgroundImageUrl } from "@/lib/utils";
 
 const iconMap: any = {
   FaBookReader,
@@ -37,13 +38,13 @@ const iconMap: any = {
 
 export default function Home() {
   const featuredCourses = courses.slice(0, 4);
-  const recentToppers = topPerformers.slice(0, 6);
+  const recentToppers = processImageData(topPerformers).slice(0, 6);
 
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white py-20 md:py-32">
-        <div className="absolute inset-0 bg-[url('/images/patterns/dots.svg')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: getBackgroundImageUrl('/images/patterns/dots.svg')}}></div>
         <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -363,7 +364,7 @@ export default function Home() {
 
       {/* Premium CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/patterns/dots.svg')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: getBackgroundImageUrl('/images/patterns/dots.svg')}}></div>
         
         {/* Floating elements */}
         <motion.div

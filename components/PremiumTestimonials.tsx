@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaStar, FaQuoteLeft, FaChevronLeft, FaChevronRight, FaPlay, FaPause } from "react-icons/fa";
+import { getAssetPath, getBackgroundImageUrl } from "@/lib/utils";
 
 interface TestimonialProps {
   name: string;
@@ -20,7 +21,7 @@ const premiumTestimonials: TestimonialProps[] = [
     course: "Class 10 Board (CBSE)",
     rating: 5,
     testimonial: "Achieving AIR 1 in CBSE was a dream come true! NEEV's systematic approach and excellent faculty guidance made it possible.",
-    image: "/images/toppers/yathartha.jpg",
+    image: getAssetPath("/images/toppers/yathartha.jpg"),
     achievement: "All India Rank 1",
     year: 2025
   },
@@ -29,7 +30,7 @@ const premiumTestimonials: TestimonialProps[] = [
     course: "JEE Advanced",
     rating: 5,
     testimonial: "Scoring 99.99% and getting into IIT Delhi was my goal, and NEEV helped me achieve it with their excellent teaching methodology!",
-    image: "/images/toppers/hem-iit.jpg",
+    image: getAssetPath("/images/toppers/hem-iit.jpg"),
     achievement: "IIT Delhi",
     year: 2024
   },
@@ -38,7 +39,7 @@ const premiumTestimonials: TestimonialProps[] = [
     course: "Government Exam Preparation",
     rating: 5,
     testimonial: "NEEV's teachers do not compromise with our stomach along with our study. They keep giving us treats like samosas, etc to replenish our hunger. This helped me to focus on my goals without having to waste my time eating food. Definitely the best!",
-    image: "/images/toppers/deepu_da.jpg",
+    image: getAssetPath("/images/toppers/deepu_da.jpg"),
     achievement: "Government Job",
     year: 2024
   },
@@ -108,7 +109,7 @@ export const PremiumTestimonialsCarousel = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-primary-50 via-white to-accent-50 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute inset-0 bg-[url('/images/patterns/dots.svg')] opacity-5"></div>
+      <div className="absolute inset-0 opacity-5" style={{backgroundImage: getBackgroundImageUrl('/images/patterns/dots.svg')}}></div>
       <motion.div
         animate={{ 
           rotate: 360,
