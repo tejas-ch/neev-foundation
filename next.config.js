@@ -7,7 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: isProd ? '/neev-foundation' : '',
-  assetPrefix: isProd ? '/neev-foundation/' : '',
+  assetPrefix: isProd ? '/neev-foundation' : '',
   trailingSlash: true,
 }
 
