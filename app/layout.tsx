@@ -12,10 +12,23 @@ export const metadata: Metadata = {
   description: "Premier educational coaching institute offering JEE, NEET, Foundation, and Board Excellence programs. Expert faculty, proven results, and personalized learning.",
   keywords: "coaching institute, JEE coaching, NEET coaching, foundation classes, board exam preparation, NEEV Foundation",
   authors: [{ name: "NEEV – THE FOUNDATION" }],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/images/branding/neev-logo.jpg",
+    apple: "/images/branding/neev-logo.jpg",
+  },
   openGraph: {
     title: "NEEV – THE FOUNDATION",
     description: "Building Strong Foundations for a Brighter Future",
     type: "website",
+    images: [
+      {
+        url: "/images/branding/neev-logo.jpg",
+        width: 800,
+        height: 600,
+        alt: "NEEV Foundation Logo",
+      },
+    ],
   },
 };
 

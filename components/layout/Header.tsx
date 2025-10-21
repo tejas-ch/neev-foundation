@@ -59,8 +59,17 @@ const Header = () => {
         <nav className="container-custom flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-800 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-              <span className="text-white font-bold text-xl">N</span>
+            <div className="w-12 h-12 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform bg-white">
+              <img 
+                src="/images/branding/neev-logo.jpg" 
+                alt="NEEV Foundation Logo" 
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  // Fallback to text logo if image fails to load
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.parentElement!.innerHTML = '<span class="text-primary-700 font-bold text-xl flex items-center justify-center w-full h-full">N</span>';
+                }}
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-xl md:text-2xl font-bold text-primary-700">

@@ -48,6 +48,13 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
+            <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
+              <img 
+                src="/images/branding/neev-logo.jpg" 
+                alt="NEEV Foundation Logo" 
+                className="w-16 h-16 rounded-full object-cover"
+              />
+            </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               About NEEV – THE FOUNDATION
             </h1>

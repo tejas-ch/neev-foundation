@@ -34,8 +34,17 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-primary-700 font-bold text-xl">N</span>
+              <div className="w-12 h-12 bg-white rounded-full overflow-hidden shadow-lg">
+                <img 
+                  src="/images/branding/neev-logo.jpg" 
+                  alt="NEEV Foundation Logo" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback to text logo if image fails to load
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.parentElement!.innerHTML = '<span class="text-primary-700 font-bold text-xl flex items-center justify-center w-full h-full">N</span>';
+                  }}
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-bold">NEEV</span>
