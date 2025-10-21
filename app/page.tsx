@@ -418,7 +418,7 @@ export default function Home() {
               Ready to Build Your Foundation?
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
-              Join thousands of successful students who achieved their dreams with NEEV's proven methodology
+              Join hundreds of successful students who achieved their dreams with NEEV's proven methodology
             </p>
 
             {/* Special offer banner */}

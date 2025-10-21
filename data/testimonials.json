@@ -1,33 +1,33 @@
 [
   {
     "id": 1,
-    "name": "Rajesh Patel",
-    "role": "Parent of Arjun Patel (JEE AIR 47)",
-    "testimonial": "NEEV transformed my son's academic journey. The faculty is dedicated, and the results speak for themselves.",
+    "name": "Rajesh Tiwari",
+    "role": "Parent of Soumil Tiwari (Class 10 - 98.2%)",
+    "testimonial": "NEEV's teachers provide excellent guidance and personal attention. My son improved significantly in mathematics and scored brilliantly in boards.",
     "rating": 5,
     "image": "/images/testimonials/default-parent.svg"
   },
   {
     "id": 2,
-    "name": "Meera Iyer",
-    "role": "Parent of Sneha Iyer (NEET AIR 156)",
-    "testimonial": "Best coaching institute in the city! The personalized attention and expert teaching helped my daughter achieve her dream.",
+    "name": "Sunita Singh",
+    "role": "Parent of Khushi Singh (Class 10 - 95.8%)",
+    "testimonial": "Very satisfied with NEEV's teaching methodology. The small batch size ensures every child gets proper attention. Highly recommended!",
     "rating": 5,
     "image": "/images/testimonials/default-parent.svg"
   },
   {
     "id": 3,
-    "name": "Vikram Singh",
-    "role": "Parent of Karan Desai (Class 10 Topper)",
-    "testimonial": "My son's confidence and grades improved dramatically after joining NEEV. Highly recommended!",
+    "name": "Deepak Bhatt",
+    "role": "Parent of Sharthak Bhatt (Class 10 - 91%)",
+    "testimonial": "The faculty at NEEV is very dedicated. They helped my son overcome his fear of mathematics and achieve good results.",
     "rating": 5,
     "image": "/images/testimonials/default-parent.svg"
   },
   {
     "id": 4,
-    "name": "Anita Sharma",
-    "role": "Parent of Divya Nair",
-    "testimonial": "The systematic approach and regular parent-teacher meetings kept us informed about our daughter's progress. Excellent institute!",
+    "name": "Priya Rawat",
+    "role": "Parent of Tejasvi Rawat (Class 10 - 87%)",
+    "testimonial": "The regular tests and personalized attention helped my daughter perform well in her board exams. Very supportive faculty.",
     "rating": 5,
     "image": "/images/testimonials/default-parent.svg"
   }

@@ -63,9 +63,9 @@ export default function ResultsPage() {
               className="text-center"
             >
               <div className="text-4xl md:text-5xl font-bold text-accent-DEFAULT mb-2">
-                50+
+                90%+
               </div>
-              <div className="text-gray-600 font-medium">AIR Holders</div>
+              <div className="text-gray-600 font-medium">Board Toppers</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -205,9 +205,9 @@ export default function ResultsPage() {
               className="bg-gradient-to-br from-primary-600 to-primary-700 text-white p-8 rounded-xl"
             >
               <h3 className="text-3xl font-bold mb-2">JEE Success</h3>
-              <p className="text-5xl font-bold mb-4">50+</p>
+              <p className="text-5xl font-bold mb-4">25+</p>
               <p className="text-gray-100">
-                Students selected in IITs, NITs, and top engineering colleges
+                Students qualified in JEE Main and selected in engineering colleges
               </p>
             </motion.div>
 
@@ -219,9 +219,9 @@ export default function ResultsPage() {
               className="bg-gradient-to-br from-orange-500 to-orange-600 text-white p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-3xl font-bold mb-2">NEET Success</h3>
-              <p className="text-5xl font-bold mb-4">40+</p>
+              <p className="text-5xl font-bold mb-4">20+</p>
               <p className="text-orange-100">
-                Students admitted to AIIMS, JIPMER, and top medical colleges
+                Students qualified in NEET and admitted to medical colleges
               </p>
             </motion.div>
 

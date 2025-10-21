@@ -29,12 +29,12 @@ export default function AboutPage() {
   ];
 
   const milestones = [
-    { year: "2008", event: "NEEV Foundation established" },
-    { year: "2010", event: "First batch of 50 students" },
-    { year: "2015", event: "Expanded to multiple courses & 500+ students" },
-    { year: "2018", event: "Produced first AIR 1 in NEET" },
-    { year: "2020", event: "Launched online learning platform" },
-    { year: "2024", event: "2000+ students & 100+ toppers annually" }
+    { year: "2016", event: "NEEV Foundation born from Pi Square Coaching" },
+    { year: "2017", event: "First batch of 25 students" },
+    { year: "2019", event: "Expanded to foundation & board programs" },
+    { year: "2021", event: "Achieved 90%+ board exam success rate" },
+    { year: "2023", event: "Introduced small batch methodology" },
+    { year: "2024", event: "500+ students with excellent board results" }
   ];
 
   return (
@@ -128,21 +128,19 @@ export default function AboutPage() {
               className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
             >
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                NEEV – THE FOUNDATION was established in 2008 with a simple yet powerful vision: to provide
-                quality education that builds strong foundations for students' futures. What started as a
-                small coaching center with just 50 students has grown into one of the region's most trusted
-                educational institutions.
+                NEEV – THE FOUNDATION emerged from Pi Square Coaching Centre in 2016 with a clear vision: to provide
+                quality education that builds strong foundations for students in Haldwani. What started as a
+                dedicated team with 25 students has grown into a trusted educational center in the community.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
                 Our name "NEEV" means "foundation" in Hindi, and that's exactly what we do – we build solid
-                foundations in Mathematics, Science, and other subjects that help students excel not just in
-                exams, but in life. Over the years, we've helped thousands of students achieve their dreams
-                of getting into IITs, AIIMS, NITs, and other premier institutions.
+                foundations in Mathematics, Science, and other subjects that help students excel in their board
+                exams and competitive entrance tests. We focus on conceptual clarity and problem-solving skills.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Today, with a team of 50+ expert faculty members and state-of-the-art facilities, we continue
-                to innovate and adapt to the changing educational landscape while staying true to our core
-                values of excellence, integrity, and student-centric approach.
+                Today, with a dedicated team of 5 experienced faculty members and personalized teaching approach,
+                we continue to help students achieve excellent results in their academic journey while maintaining
+                our core values of excellence, integrity, and student-centric approach.
               </p>
             </motion.div>
           </div>
@@ -286,7 +284,7 @@ export default function AboutPage() {
               Be Part of Our Success Story
             </h2>
             <p className="text-xl mb-8 text-gray-100">
-              Join thousands of successful students who chose NEEV
+              Join hundreds of successful students who chose NEEV
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary bg-accent-DEFAULT hover:bg-accent-dark">

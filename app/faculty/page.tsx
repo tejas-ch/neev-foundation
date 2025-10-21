@@ -133,7 +133,7 @@ export default function FacultyPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Highly Qualified</h3>
               <p className="text-gray-600">
-                PhD holders, IIT/NIT alumni, and subject matter experts with deep academic knowledge
+                M.Sc, B.Ed holders and experienced educators with deep subject knowledge
               </p>
             </motion.div>
 
@@ -149,7 +149,7 @@ export default function FacultyPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Proven Track Record</h3>
               <p className="text-gray-600">
-                Produced hundreds of toppers in JEE, NEET, and Board exams over the years
+                Consistently producing board exam toppers and helping students achieve their academic goals
               </p>
             </motion.div>
 

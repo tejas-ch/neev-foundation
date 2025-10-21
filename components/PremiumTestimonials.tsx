@@ -17,46 +17,48 @@ interface TestimonialProps {
 
 const premiumTestimonials: TestimonialProps[] = [
   {
-    name: "Yathartha Mehra",
+    name: "Soumil Tiwari",
     course: "Class 10 Board (CBSE)",
     rating: 5,
-    testimonial: "Achieving AIR 1 in CBSE was a dream come true! NEEV's systematic approach and excellent faculty guidance made it possible.",
-    image: getAssetPath("/images/toppers/yathartha.jpg"),
-    achievement: "All India Rank 1",
-    year: 2025
-  },
-  {
-    name: "Hem Paliwal",
-    course: "JEE Advanced",
-    rating: 5,
-    testimonial: "Scoring 99.99% and getting into IIT Delhi was my goal, and NEEV helped me achieve it with their excellent teaching methodology!",
-    image: getAssetPath("/images/toppers/hem-iit.jpg"),
-    achievement: "IIT Delhi",
+    testimonial: "NEEV's foundation course helped me build strong basics. The teachers are very supportive and make learning enjoyable. Scored 98.2% in boards!",
+    image: getAssetPath("/images/toppers/default-student.svg"),
+    achievement: "School Topper",
     year: 2024
   },
   {
-    name: "Deepu Da",
-    course: "Government Exam Preparation",
+    name: "Harshita Tiwari",
+    course: "Class 10 Board (CBSE)",
     rating: 5,
-    testimonial: "NEEV's teachers do not compromise with our stomach along with our study. They keep giving us treats like samosas, etc to replenish our hunger. This helped me to focus on my goals without having to waste my time eating food. Definitely the best!",
-    image: getAssetPath("/images/toppers/deepu_da.jpg"),
-    achievement: "Government Job",
+    testimonial: "Thanks to NEEV's systematic approach, I could score excellent marks. The regular tests helped me stay prepared throughout the year.",
+    image: getAssetPath("/images/toppers/default-student.svg"),
+    achievement: "District Rank 5",
     year: 2024
   },
   {
-    name: "Priya Sharma",
-    course: "NEET Preparation",
+    name: "Khushi Singh",
+    course: "Class 10 Board (CBSE)",
     rating: 5,
-    testimonial: "The faculty's dedication and personalized attention helped me crack NEET with an excellent rank. The study environment at NEEV is unmatched!",
-    achievement: "AIIMS Selection",
+    testimonial: "NEEV provided the perfect environment for learning. The faculty is knowledgeable and always ready to help with doubts.",
+    image: getAssetPath("/images/toppers/default-student.svg"),
+    achievement: "95.8% Merit",
     year: 2024
   },
   {
-    name: "Arjun Kumar",
-    course: "JEE Main",
+    name: "Ankit Sharma",
+    course: "Class 12 Board (CBSE)",
     rating: 5,
-    testimonial: "From average student to IIT qualifier - NEEV transformed my academic journey completely. The doubt-clearing sessions were particularly helpful.",
-    achievement: "IIT Bombay",
+    testimonial: "NEEV's focused preparation strategy helped me secure excellent marks in Class 12 boards. The teachers make concepts very clear.",
+    image: getAssetPath("/images/toppers/default-student.svg"),
+    achievement: "School Topper",
+    year: 2024
+  },
+  {
+    name: "Riya Chaudhary",
+    course: "Class 10 Board (CBSE)",
+    rating: 5,
+    testimonial: "The personalized attention at NEEV helped me overcome my weak areas and build confidence. Mathematics became much easier with proper guidance.",
+    image: getAssetPath("/images/toppers/default-student.svg"),
+    achievement: "Merit List",
     year: 2024
   }
 ];

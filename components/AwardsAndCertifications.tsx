@@ -12,7 +12,7 @@ const awards = [
     color: "from-yellow-400 to-yellow-600"
   },
   {
-    title: "Top IIT-JEE Coaching Center",
+    title: "Top Engineering Entrance Coaching",
     organization: "Academic Achievement Board",
     year: "2023-24",
     icon: <FaCrown />,
@@ -51,7 +51,7 @@ const awards = [
 const certifications = [
   "ISO 9001:2015 Certified",
   "NEET Preparation Accredited",
-  "IIT-JEE Training Certified",
+  "Engineering Entrance Training Certified",
   "Board Exam Excellence Certified",
   "Olympiad Training Authorized",
   "Quality Education Standard"

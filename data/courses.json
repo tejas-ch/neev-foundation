@@ -24,8 +24,8 @@
   {
     "id": "jee-preparation",
     "title": "JEE Preparation",
-    "subtitle": "IIT-JEE Main & Advanced",
-    "description": "Comprehensive JEE coaching with focus on conceptual clarity, problem-solving techniques, and exam strategies.",
+    "subtitle": "Engineering Entrance Coaching",
+    "description": "Comprehensive JEE coaching with focus on conceptual clarity, problem-solving techniques, and exam strategies for engineering aspirants.",
     "duration": "1-2 Years",
     "targetAudience": "Class 11-12 & Droppers",
     "icon": "FaGraduationCap",
@@ -38,9 +38,9 @@
     "subjects": ["Physics", "Chemistry", "Mathematics"],
     "batchTypes": ["Two Year Program", "One Year Program", "Crash Course"],
     "highlights": [
-      "IITian and experienced faculty",
-      "Advanced problem-solving sessions",
-      "All India Test Series"
+      "Experienced and qualified faculty",
+      "Problem-solving focused approach",
+      "Regular test series"
     ]
   },
   {
