@@ -111,28 +111,28 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <StatCard 
-              number="15000+" 
+              number="500+" 
               label="Students Taught" 
               icon={<FaUsers />} 
               index={0}
               gradient="from-blue-500 to-blue-700"
             />
             <StatCard 
-              number="98%" 
+              number="92%" 
               label="Success Rate" 
               icon={<FaTrophy />} 
               index={1}
               gradient="from-green-500 to-green-700"
             />
             <StatCard 
-              number="2500+" 
-              label="IIT/NEET Selections" 
+              number="25+" 
+              label="Top Performers" 
               icon={<FaCrown />} 
               index={2}
               gradient="from-purple-500 to-purple-700"
             />
             <StatCard 
-              number="50+" 
+              number="5+" 
               label="Expert Faculty" 
               icon={<FaChalkboardTeacher />} 
               index={3}
@@ -153,14 +153,14 @@ export default function Home() {
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <AnimatedProgressBar percentage={96} label="JEE Advanced Success" color="bg-gradient-to-r from-blue-500 to-blue-600" delay={200} />
-                <AnimatedProgressBar percentage={94} label="NEET Selection Rate" color="bg-gradient-to-r from-green-500 to-green-600" delay={400} />
-                <AnimatedProgressBar percentage={99} label="Board Exam Excellence" color="bg-gradient-to-r from-purple-500 to-purple-600" delay={600} />
+                <AnimatedProgressBar percentage={85} label="Board Exam Excellence" color="bg-gradient-to-r from-blue-500 to-blue-600" delay={200} />
+                <AnimatedProgressBar percentage={78} label="Competitive Exam Success" color="bg-gradient-to-r from-green-500 to-green-600" delay={400} />
+                <AnimatedProgressBar percentage={92} label="Foundation Program Success" color="bg-gradient-to-r from-purple-500 to-purple-600" delay={600} />
               </div>
               <div>
-                <AnimatedProgressBar percentage={92} label="Olympiad Qualifiers" color="bg-gradient-to-r from-orange-500 to-orange-600" delay={800} />
-                <AnimatedProgressBar percentage={88} label="Top 1000 Ranks" color="bg-gradient-to-r from-red-500 to-red-600" delay={1000} />
-                <AnimatedProgressBar percentage={95} label="Student Satisfaction" color="bg-gradient-to-r from-pink-500 to-pink-600" delay={1200} />
+                <AnimatedProgressBar percentage={88} label="Student Improvement Rate" color="bg-gradient-to-r from-orange-500 to-orange-600" delay={800} />
+                <AnimatedProgressBar percentage={95} label="Student Satisfaction" color="bg-gradient-to-r from-red-500 to-red-600" delay={1000} />
+                <AnimatedProgressBar percentage={90} label="Parent Satisfaction" color="bg-gradient-to-r from-pink-500 to-pink-600" delay={1200} />
               </div>
             </div>
           </motion.div>
@@ -184,9 +184,10 @@ export default function Home() {
                 {siteConfig.about}
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                With over 15 years of excellence in education, NEEV has been the foundation
-                for thousands of successful students. Our innovative teaching methods combined
-                with experienced faculty ensure every student reaches their full potential.
+                Born from the legacy of Pi Square Coaching Centre, NEEV Foundation has been serving
+                the educational needs of Haldwani students for years. Our dedicated faculty of 5 experienced 
+                teachers provides personalized attention in small batch sizes, ensuring every student gets 
+                the support they need to excel in their academic journey.
               </p>
               <Link href="/about" className="btn-primary">
                 Learn More About Us
@@ -203,22 +204,22 @@ export default function Home() {
               <div className="card p-6">
                 <FaChalkboardTeacher className="text-5xl text-primary-600 mb-4" />
                 <h3 className="text-xl font-bold mb-2">Expert Faculty</h3>
-                <p className="text-gray-600">50+ experienced educators</p>
+                <p className="text-gray-600">5 dedicated teachers</p>
               </div>
               <div className="card p-6">
                 <FaUsers className="text-5xl text-accent-DEFAULT mb-4" />
                 <h3 className="text-xl font-bold mb-2">Small Batches</h3>
-                <p className="text-gray-600">Personalized attention</p>
+                <p className="text-gray-600">Max 15 students per batch</p>
               </div>
               <div className="card p-6">
                 <FaAward className="text-5xl text-primary-600 mb-4" />
                 <h3 className="text-xl font-bold mb-2">Proven Results</h3>
-                <p className="text-gray-600">100+ toppers yearly</p>
+                <p className="text-gray-600">Excellent board results</p>
               </div>
               <div className="card p-6">
                 <FaRocket className="text-5xl text-accent-DEFAULT mb-4" />
-                <h3 className="text-xl font-bold mb-2">Modern Methods</h3>
-                <p className="text-gray-600">Innovative learning</p>
+                <h3 className="text-xl font-bold mb-2">Personal Care</h3>
+                <p className="text-gray-600">Individual attention</p>
               </div>
             </motion.div>
           </div>
@@ -475,20 +476,20 @@ export default function Home() {
               className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
             >
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">15+</div>
+                <div className="text-2xl font-bold">8+</div>
                 <div className="text-sm opacity-80">Years Experience</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">15K+</div>
+                <div className="text-2xl font-bold">500+</div>
                 <div className="text-sm opacity-80">Students Taught</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">98%</div>
+                <div className="text-2xl font-bold">92%</div>
                 <div className="text-sm opacity-80">Success Rate</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">50+</div>
-                <div className="text-sm opacity-80">Expert Faculty</div>
+                <div className="text-2xl font-bold">5</div>
+                <div className="text-sm opacity-80">Dedicated Faculty</div>
               </div>
             </motion.div>
           </motion.div>

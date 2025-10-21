@@ -1,92 +1,77 @@
 [
   {
     "id": 1,
-    "name": "Dr. Rajesh Kumar",
-    "subject": "Physics",
-    "qualification": "Ph.D. (IIT Delhi), B.Tech",
-    "experience": "15+ years",
-    "specialization": "JEE Advanced Physics, Mechanics & Electromagnetism",
-    "quote": "Physics is not about formulas, it's about understanding nature's beautiful laws.",
+    "name": "Mayank Sir",
+    "subject": "Mathematics",
+    "qualification": "M.Sc. Mathematics, B.Ed.",
+    "experience": "18+ years",
+    "specialization": "Foundation Mathematics, Board Exams & JEE Main",
+    "quote": "Mathematics becomes easy when you understand the logic behind every problem.",
     "image": "/images/faculty/default-male.svg",
     "achievements": [
-      "Former IIT Faculty",
-      "Author of 3 physics textbooks",
-      "Produced 50+ IIT selections"
+      "Former Pi Square coaching faculty",
+      "Expert in CBSE & UTTARAKHAND board",
+      "Helped 200+ students excel in mathematics"
     ]
   },
   {
     "id": 2,
-    "name": "Prof. Anjali Sharma",
-    "subject": "Chemistry",
-    "qualification": "M.Sc. (Gold Medalist), B.Ed.",
-    "experience": "12+ years",
-    "specialization": "Organic Chemistry & NEET Chemistry",
-    "quote": "Chemistry is the study of change, and every student can transform their understanding with the right guidance.",
-    "image": "/images/faculty/default-female.svg",
+    "name": "Hem Sir",
+    "subject": "Physics & Science",
+    "qualification": "M.Sc. Physics, B.Ed.",
+    "experience": "8+ years",
+    "specialization": "Physics for JEE & NEET, Foundation Science",
+    "quote": "Physics is all around us - let's explore the world through scientific thinking.",
+    "image": "/images/faculty/default-male.svg",
     "achievements": [
-      "100% pass rate in batches",
-      "Expert in NCERT-based teaching",
-      "Published research papers"
+      "Strong conceptual teaching approach",
+      "Excellent track record in competitive exams",
+      "Makes physics simple and interesting"
     ]
   },
   {
     "id": 3,
-    "name": "Mr. Vikram Singh",
-    "subject": "Mathematics",
-    "qualification": "M.Sc. Mathematics (IIT Kanpur)",
-    "experience": "18+ years",
-    "specialization": "JEE Mathematics, Calculus & Algebra",
-    "quote": "Mathematics is not about numbers, it's about logical thinking and problem-solving.",
+    "name": "Sunder Sir",
+    "subject": "Chemistry",
+    "qualification": "M.Sc. Chemistry",
+    "experience": "6+ years",
+    "specialization": "Organic & Inorganic Chemistry, NEET Chemistry",
+    "quote": "Chemistry is the bridge between physics and biology - master it to excel in all sciences.",
     "image": "/images/faculty/default-male.svg",
     "achievements": [
-      "20+ AIR holders under guidance",
-      "National level math trainer",
-      "Olympiad mentor"
+      "NEET chemistry specialist",
+      "Clear and systematic teaching method",
+      "Focuses on NCERT-based learning"
     ]
   },
   {
     "id": 4,
-    "name": "Dr. Priya Mehta",
-    "subject": "Biology",
-    "qualification": "MBBS, M.D.",
-    "experience": "10+ years",
-    "specialization": "NEET Biology, Botany & Zoology",
-    "quote": "Biology is the most powerful science of life. Master it, and you master the future of medicine.",
-    "image": "/images/faculty/default-female.svg",
+    "name": "Kuldeep Sir",
+    "subject": "Mathematics",
+    "qualification": "M.Sc. Mathematics",
+    "experience": "7+ years",
+    "specialization": "Advanced Mathematics, Problem Solving",
+    "quote": "Every mathematical problem has a solution - we just need to find the right approach.",
+    "image": "/images/faculty/default-male.svg",
     "achievements": [
-      "NEET AIR 1 producer",
-      "Medical practitioner & educator",
-      "NCERT expert"
+      "Strong foundation building approach",
+      "Excellent board exam results",
+      "Student-friendly teaching style"
     ]
   },
   {
     "id": 5,
-    "name": "Mr. Amit Verma",
-    "subject": "English & Social Studies",
-    "qualification": "M.A. English, B.Ed.",
-    "experience": "14+ years",
-    "specialization": "Board Exams, Communication Skills",
-    "quote": "Language is the road map of a culture. Learn it well, express yourself better.",
-    "image": "/images/faculty/default-male.svg",
-    "achievements": [
-      "100% board exam success",
-      "Soft skills trainer",
-      "Published author"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Ms. Kavita Reddy",
-    "subject": "Mathematics (Foundation)",
-    "qualification": "M.Sc. Mathematics, B.Ed.",
-    "experience": "11+ years",
-    "specialization": "Classes 6-10, Olympiad Math",
-    "quote": "Every child can excel in mathematics with patience, practice, and the right approach.",
+    "name": "Manisha Mam",
+    "subject": "Biology",
+    "qualification": "M.Sc. Biology, B.Ed.",
+    "experience": "7+ years",
+    "specialization": "NEET Biology, CBSE Biology",
+    "quote": "Biology teaches us about life itself - understand it to appreciate the miracle of existence.",
     "image": "/images/faculty/default-female.svg",
     "achievements": [
-      "IMO Gold medalists coach",
-      "Foundation expert",
-      "Parent's favorite teacher"
+      "NEET qualified students",
+      "NCERT-based systematic teaching",
+      "Caring and supportive approach"
     ]
   }
 ]

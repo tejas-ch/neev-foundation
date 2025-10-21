@@ -1,7 +1,7 @@
 {
   "brandName": "NEEV – THE FOUNDATION",
   "tagline": "Building Strong Foundations for a Brighter Future",
-  "about": "Our aim is to provide education at all levels and to everyone easily. 📚 Dedicated Faculty 🏆 | Innovative Learning Techniques 🚀",
+  "about": "Born from Pi Square Coaching Centre, NEEV Foundation is committed to providing quality education to students in Haldwani. With experienced faculty and personalized attention, we help students achieve their academic goals.",
   "contact": {
     "phone": "+91 95481 56544",
     "email": "NEEVthefoundation619@gmail.com",
@@ -16,26 +16,26 @@
   },
   "stats": [
     {
-      "number": "2000+",
+      "number": "500+",
       "label": "Students Trained"
     },
     {
-      "number": "100+",
-      "label": "Toppers Every Year"
+      "number": "25+",
+      "label": "Top Performers"
     },
     {
-      "number": "15+",
+      "number": "8+",
       "label": "Years of Excellence"
     },
     {
-      "number": "50+",
+      "number": "5",
       "label": "Expert Faculty"
     }
   ],
   "hero": {
-    "headline": "Building Strong Foundations for Success",
-    "subtext": "Personalized learning with expert faculty & proven results.",
-    "ctaPrimary": "Join Now",
-    "ctaSecondary": "Explore Courses"
+    "headline": "Quality Education with Personal Attention",
+    "subtext": "Small batches, experienced faculty & proven teaching methods.",
+    "ctaPrimary": "Enroll Now",
+    "ctaSecondary": "View Courses"
   }
 }
