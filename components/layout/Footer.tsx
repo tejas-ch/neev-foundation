@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowUp } from "react-icons/fa";
 import siteConfig from "@/data/siteConfig.json";
+import { getAssetPath } from "@/lib/utils";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -36,7 +37,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-white rounded-full overflow-hidden shadow-lg">
                 <img 
-                  src="/images/branding/neev-logo.jpg" 
+                  src={getAssetPath("/images/branding/neev-logo.jpg")}
                   alt="NEEV Foundation Logo" 
                   className="w-full h-full object-cover"
                   onError={(e) => {

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { FaEye, FaBullseye, FaHeart, FaStar, FaRocket, FaUserGraduate } from "react-icons/fa";
 import Link from "next/link";
+import { getAssetPath } from "@/lib/utils";
 
 export default function AboutPage() {
   const values = [
@@ -50,7 +51,7 @@ export default function AboutPage() {
           >
             <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
               <img 
-                src="/images/branding/neev-logo.jpg" 
+                src={getAssetPath("/images/branding/neev-logo.jpg")}
                 alt="NEEV Foundation Logo" 
                 className="w-16 h-16 rounded-full object-cover"
               />

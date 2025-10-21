@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes, FaPhone, FaEnvelope } from "react-icons/fa";
 import siteConfig from "@/data/siteConfig.json";
+import { getAssetPath } from "@/lib/utils";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +62,7 @@ const Header = () => {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform bg-white">
               <img 
-                src="/images/branding/neev-logo.jpg" 
+                src={getAssetPath("/images/branding/neev-logo.jpg")}
                 alt="NEEV Foundation Logo" 
                 className="w-full h-full object-cover"
                 onError={(e) => {
