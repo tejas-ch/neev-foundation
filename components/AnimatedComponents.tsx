@@ -91,7 +91,7 @@ export const StatCard = ({ number, label, icon, index, gradient = "from-primary-
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
-          transition={{ delay: index * 0.1 + 0.3, type: "spring", stiffness: 200 }}
+          transition={{ delay: index * 0.05, duration: 0.3 }}
           className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center text-white shadow-lg opacity-10 group-hover:opacity-20 transition-opacity duration-300"
         >
           {icon}
@@ -102,7 +102,7 @@ export const StatCard = ({ number, label, icon, index, gradient = "from-primary-
             className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent mb-3"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
-            transition={{ delay: index * 0.1 + 0.2, type: "spring", stiffness: 150 }}
+            transition={{ delay: index * 0.05, duration: 0.4 }}
           >
             {number.includes('+') ? (
               <>

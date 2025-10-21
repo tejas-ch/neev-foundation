@@ -107,9 +107,9 @@ export const AwardsAndCertifications = () => {
                 
                 {/* Floating icon */}
                 <motion.div
-                  initial={{ scale: 0, rotate: -45 }}
-                  whileInView={{ scale: 1, rotate: 0 }}
-                  transition={{ delay: index * 0.1 + 0.3, type: "spring", stiffness: 200 }}
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ delay: index * 0.05, duration: 0.3 }}
                   className={`w-16 h-16 bg-gradient-to-br ${award.color} rounded-full flex items-center justify-center text-white text-2xl mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300`}
                 >
                   {award.icon}
@@ -164,7 +164,7 @@ export const AwardsAndCertifications = () => {
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.8 + index * 0.1 }}
+                  transition={{ delay: index * 0.05, duration: 0.3 }}
                   viewport={{ once: true }}
                   className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:bg-white/20 transition-all duration-300"
                 >

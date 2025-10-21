@@ -69,9 +69,9 @@ const StarRating = ({ rating }: { rating: number }) => {
       {[...Array(5)].map((_, i) => (
         <motion.div
           key={i}
-          initial={{ scale: 0, rotate: -180 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ delay: i * 0.1, type: "spring", stiffness: 200 }}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: i * 0.05, duration: 0.2 }}
         >
           <FaStar 
             className={`text-lg ${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}

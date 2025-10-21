@@ -7,9 +7,9 @@ import topPerformers from "@/data/topPerformers.json";
 import { processImageData, getAssetPath } from "@/lib/utils";
 
 export default function ResultsPage() {
-  const [selectedYear, setSelectedYear] = useState("2025");
+  const [selectedYear, setSelectedYear] = useState("2024");
   
-  const years = ["2025", "2024", "2023"];
+  const years = ["2024"];
   // Process image data at render time to ensure basePath is applied
   const processedToppers = topPerformers.map(topper => ({
     ...topper,
@@ -58,7 +58,7 @@ export default function ResultsPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.4 }}
               viewport={{ once: true }}
               className="text-center"
             >
@@ -70,7 +70,7 @@ export default function ResultsPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
               viewport={{ once: true }}
               className="text-center"
             >
@@ -82,7 +82,7 @@ export default function ResultsPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.4, delay: 0.15 }}
               viewport={{ once: true }}
               className="text-center"
             >
@@ -121,7 +121,7 @@ export default function ResultsPage() {
                 key={topper.id}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true }}
                 className="card p-0 overflow-hidden group"
               >
