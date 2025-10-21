@@ -9,6 +9,10 @@ const nextConfig = {
   basePath: isProd ? '/neev-foundation' : '',
   assetPrefix: isProd ? '/neev-foundation' : '',
   trailingSlash: true,
+  // Enable better caching and optimization
+  compiler: {
+    removeConsole: isProd,
+  },
 }
 
 module.exports = nextConfig
