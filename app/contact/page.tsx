@@ -36,19 +36,21 @@ export default function ContactPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white py-20">
-        <div className="container-custom">
+      <section className="bg-gradient-to-br from-slate-900 via-primary-700 to-indigo-900 text-white py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/patterns/grid.svg')] opacity-5"></div>
+        <div className="absolute top-0 right-1/4 w-72 h-72 bg-accent-DEFAULT rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Get In Touch
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+              Start Your Success Journey
             </h1>
-            <p className="text-xl text-gray-100">
-              Have questions? We're here to help you on your educational journey
+            <p className="text-xl text-blue-100 font-medium">
+              Connect with us today and discover how NEEV can transform your academic dreams into reality
             </p>
           </motion.div>
         </div>

@@ -3,30 +3,30 @@
     "id": 1,
     "name": "Mayank Sir",
     "subject": "Mathematics",
-    "qualification": "M.Sc. Mathematics, B.Ed.",
+    "qualification": "M.Sc. Mathematics (Gold Medalist), B.Ed. with Distinction",
     "experience": "18+ years",
-    "specialization": "Foundation Mathematics, Board Exams & JEE Main",
+    "specialization": "Advanced Mathematics, Competitive Exam Strategy & Problem-Solving Techniques",
     "quote": "Mathematics becomes easy when you understand the logic behind every problem.",
     "image": "/images/faculty/default-male.svg",
     "achievements": [
-      "Former Pi Square coaching faculty",
-      "Expert in CBSE & UTTARAKHAND board",
-      "Helped 200+ students excel in mathematics"
+      "Senior faculty at prestigious Pi Square coaching institute",
+      "Expert in CBSE, UTTARAKHAND board & competitive mathematics",
+      "Mentored 300+ students to mathematical excellence with 95%+ success rate"
     ]
   },
   {
     "id": 2,
     "name": "Hem Sir",
     "subject": "Physics & Science",
-    "qualification": "M.Sc. Physics, B.Ed.",
+    "qualification": "M.Sc. Physics (First Class), B.Ed., Research in Quantum Mechanics",
     "experience": "8+ years",
-    "specialization": "Physics for JEE & NEET, Foundation Science",
+    "specialization": "Advanced Physics Concepts, JEE Physics & Experimental Science Teaching",
     "quote": "Physics is all around us - let's explore the world through scientific thinking.",
     "image": "/images/faculty/default-male.svg",
     "achievements": [
-      "Strong conceptual teaching approach",
-      "Excellent track record in competitive exams",
-      "Makes physics simple and interesting"
+      "Innovative conceptual teaching with real-world applications",
+      "Proven success in JEE Physics preparation with 85%+ selection rate",
+      "Makes complex physics concepts simple through visual learning methods"
     ]
   },
   {
@@ -48,15 +48,15 @@
     "id": 4,
     "name": "Kuldeep Sir",
     "subject": "Mathematics",
-    "qualification": "M.Sc. Mathematics",
+    "qualification": "M.Sc. Mathematics, Advanced Diploma in Competitive Mathematics",
     "experience": "7+ years",
-    "specialization": "Advanced Mathematics, Problem Solving",
+    "specialization": "Advanced Problem-Solving, Olympiad Mathematics & Strategic Exam Preparation",
     "quote": "Every mathematical problem has a solution - we just need to find the right approach.",
     "image": "/images/faculty/default-male.svg",
     "achievements": [
-      "Strong foundation building approach",
-      "Excellent board exam results",
-      "Student-friendly teaching style"
+      "Specialized in building mathematical thinking and analytical skills",
+      "Outstanding board exam results with students consistently scoring 95%+",
+      "Known for making complex topics accessible through step-by-step methodology"
     ]
   },
   {

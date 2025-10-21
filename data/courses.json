@@ -3,15 +3,15 @@
     "id": "foundation-6-10",
     "title": "Foundation Course",
     "subtitle": "Classes 6-10",
-    "description": "Build strong fundamentals in Mathematics, Science, and English. Prepare for board exams and competitive entrance tests.",
+    "description": "Build unshakeable foundations in Mathematics, Science, and English. Our comprehensive program ensures academic excellence and prepares students for competitive success ahead.",
     "duration": "Full Academic Year",
     "targetAudience": "Students in Classes 6-10",
     "icon": "FaBookReader",
     "features": [
-      "Comprehensive coverage of NCERT syllabus",
-      "Regular assessments and doubt sessions",
-      "Interactive learning methods",
-      "Study material and assignments"
+      "Complete NCERT mastery with advanced concepts",
+      "Weekly assessments with detailed performance analysis",
+      "Interactive digital learning with visual teaching aids",
+      "Comprehensive study material & practice worksheets"
     ],
     "subjects": ["Mathematics", "Science", "English", "Social Studies"],
     "batchTypes": ["Regular Classroom", "Weekend Batches"],
@@ -25,29 +25,29 @@
     "id": "jee-preparation",
     "title": "JEE Preparation",
     "subtitle": "Engineering Entrance Coaching",
-    "description": "Comprehensive JEE coaching with focus on conceptual clarity, problem-solving techniques, and exam strategies for engineering aspirants.",
+    "description": "Master engineering entrance exams with our proven methodology. Expert-crafted curriculum focusing on conceptual mastery, strategic problem-solving, and exam excellence for aspiring engineers.",
     "duration": "1-2 Years",
     "targetAudience": "Class 11-12 & Droppers",
     "icon": "FaGraduationCap",
     "features": [
-      "Complete JEE syllabus coverage",
-      "Regular mock tests and analysis",
-      "Daily practice problems (DPP)",
-      "Previous year papers discussion"
+      "Complete JEE syllabus with advanced problem-solving",
+      "Weekly mock tests with rank analysis & improvement strategy",
+      "Daily practice problems (DPP) with detailed solutions",
+      "15+ years previous papers with pattern analysis"
     ],
     "subjects": ["Physics", "Chemistry", "Mathematics"],
     "batchTypes": ["Two Year Program", "One Year Program", "Crash Course"],
     "highlights": [
-      "Experienced and qualified faculty",
-      "Problem-solving focused approach",
-      "Regular test series"
+      "Faculty with proven track record in JEE coaching",
+      "Strategic problem-solving with shortcut techniques",
+      "All-India level test series with detailed rank analysis"
     ]
   },
   {
     "id": "neet-preparation",
     "title": "NEET Preparation",
     "subtitle": "Medical Entrance Coaching",
-    "description": "Expert NEET coaching focusing on Biology, Physics, and Chemistry with NCERT-based approach and test series.",
+    "description": "Achieve medical dreams with our comprehensive NEET preparation. Expert Biology, Physics, and Chemistry coaching with NCERT-focused approach and strategic test preparation.",
     "duration": "1-2 Years",
     "targetAudience": "Class 11-12 & Droppers",
     "icon": "FaMicroscope",

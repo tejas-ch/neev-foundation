@@ -47,8 +47,10 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white py-20 md:py-32">
-        <div className="absolute inset-0 opacity-10" style={{backgroundImage: getBackgroundImageUrl('/images/patterns/dots.svg')}}></div>
+      <section className="relative bg-gradient-to-br from-slate-900 via-primary-800 to-indigo-900 text-white py-20 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/patterns/grid.svg')] opacity-5"></div>
+        <div className="absolute top-0 left-1/4 w-72 h-72 bg-accent-DEFAULT rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-400 rounded-full filter blur-3xl opacity-15 animate-pulse delay-1000"></div>
         <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -63,10 +65,10 @@ export default function Home() {
                 {siteConfig.hero.subtext}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className="btn-primary bg-accent-DEFAULT hover:bg-accent-dark">
+                <Link href="/contact" className="btn-primary bg-gradient-to-r from-accent-DEFAULT to-accent-dark hover:from-accent-dark hover:to-accent-DEFAULT shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                   {siteConfig.hero.ctaPrimary}
                 </Link>
-                <Link href="/courses" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white">
+                <Link href="/courses" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300">
                   {siteConfig.hero.ctaSecondary}
                 </Link>
               </div>
@@ -92,8 +94,9 @@ export default function Home() {
       </section>
 
       {/* Premium Stats Section */}
-      <section className="bg-gradient-to-r from-gray-50 to-white py-16 shadow-xl -mt-8 relative z-20">
-        <div className="container-custom">
+      <section className="bg-gradient-to-r from-slate-50 via-white to-blue-50 py-16 shadow-2xl -mt-8 relative z-20 border-t border-gray-100">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-50/50 to-accent-light/30"></div>
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -101,10 +104,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-800 via-primary-600 to-indigo-600 bg-clip-text text-transparent mb-4">
               Our Success Story
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
               Transforming dreams into reality with proven results and excellence
             </p>
           </motion.div>
@@ -209,7 +212,7 @@ export default function Home() {
               <div className="card p-6">
                 <FaUsers className="text-5xl text-accent-DEFAULT mb-4" />
                 <h3 className="text-xl font-bold mb-2">Small Batches</h3>
-                <p className="text-gray-600">Max 15 students per batch</p>
+                <p className="text-gray-600">Max 25-35 students per batch</p>
               </div>
               <div className="card p-6">
                 <FaAward className="text-5xl text-primary-600 mb-4" />
@@ -415,10 +418,10 @@ export default function Home() {
             </motion.div>
             
             <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-accent-light to-white bg-clip-text text-transparent">
-              Ready to Build Your Foundation?
+              Transform Your Academic Future Today
             </h2>
-            <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
-              Join hundreds of successful students who achieved their dreams with NEEV's proven methodology
+            <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed font-medium">
+              Join the success story of hundreds of students who turned their dreams into achievements with NEEV's proven excellence
             </p>
 
             {/* Special offer banner */}
@@ -430,11 +433,11 @@ export default function Home() {
               className="bg-gradient-to-r from-accent-DEFAULT to-accent-dark rounded-2xl p-6 mb-8 border-2 border-accent-light/30"
             >
               <div className="flex items-center justify-center gap-4 mb-4">
-                <span className="text-3xl">⚡</span>
-                <span className="text-2xl font-bold">Limited Time Offer</span>
-                <span className="text-3xl">⚡</span>
+                <span className="text-3xl">🎯</span>
+                <span className="text-2xl font-bold">Exclusive Opportunity</span>
+                <span className="text-3xl">🚀</span>
               </div>
-              <p className="text-lg mb-2">Get <span className="text-3xl font-bold">FREE</span> counselling session</p>
+              <p className="text-lg mb-2">Get <span className="text-3xl font-bold text-white">FREE</span> expert counselling & roadmap session</p>
               <p className="text-sm opacity-80">+ Free study materials worth ₹5,000</p>
             </motion.div>
 
