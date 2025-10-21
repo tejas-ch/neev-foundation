@@ -8,6 +8,7 @@ import FloatingCTA from "@/components/common/FloatingCTA";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tejas-ch.github.io/neev-foundation'),
   title: "NEEV – THE FOUNDATION | Building Strong Foundations for a Brighter Future",
   description: "Premier educational coaching institute offering JEE, NEET, Foundation, and Board Excellence programs. Expert faculty, proven results, and personalized learning.",
   keywords: "coaching institute, JEE coaching, NEET coaching, foundation classes, board exam preparation, NEEV Foundation",
