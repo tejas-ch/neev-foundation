@@ -51,7 +51,7 @@ export default function ResultsPage() {
               className="text-center"
             >
               <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">
-                100+
+                25+
               </div>
               <div className="text-gray-600 font-medium">Toppers</div>
             </motion.div>
@@ -205,7 +205,7 @@ export default function ResultsPage() {
               className="bg-gradient-to-br from-primary-600 to-primary-700 text-white p-8 rounded-xl"
             >
               <h3 className="text-3xl font-bold mb-2">JEE Success</h3>
-              <p className="text-5xl font-bold mb-4">25+</p>
+              <p className="text-5xl font-bold mb-4">12+</p>
               <p className="text-gray-100">
                 Students qualified in JEE Main and selected in engineering colleges
               </p>
@@ -219,7 +219,7 @@ export default function ResultsPage() {
               className="bg-gradient-to-br from-orange-500 to-orange-600 text-white p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-3xl font-bold mb-2">NEET Success</h3>
-              <p className="text-5xl font-bold mb-4">20+</p>
+              <p className="text-5xl font-bold mb-4">8+</p>
               <p className="text-orange-100">
                 Students qualified in NEET and admitted to medical colleges
               </p>
