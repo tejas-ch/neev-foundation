@@ -38,7 +38,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-primary-700 to-indigo-900 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/patterns/grid.svg')] opacity-5"></div>
-        <div className="absolute top-0 right-1/4 w-72 h-72 bg-accent-DEFAULT rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute top-0 right-1/4 w-72 h-72 bg-gold-600 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
         <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -79,14 +79,14 @@ export default function ContactPage() {
 
               <div className="card p-6">
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaPhone className="text-primary-600 text-xl" />
+                  <div className="w-12 h-12 bg-navy-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <FaPhone className="text-navy-900 text-xl" />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
                     <a
                       href={`tel:${siteConfig.contact.phone}`}
-                      className="text-primary-600 hover:text-primary-700 transition-colors"
+                      className="text-navy-900 hover:text-navy-950 transition-colors"
                     >
                       {siteConfig.contact.phone}
                     </a>
@@ -94,14 +94,14 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-accent-light/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaEnvelope className="text-accent-DEFAULT text-xl" />
+                  <div className="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <FaEnvelope className="text-gold-600 text-xl" />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Email</h3>
                     <a
                       href={`mailto:${siteConfig.contact.email}`}
-                      className="text-primary-600 hover:text-primary-700 transition-colors break-all"
+                      className="text-navy-900 hover:text-navy-950 transition-colors break-all"
                     >
                       {siteConfig.contact.email}
                     </a>
@@ -109,8 +109,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaMapMarkerAlt className="text-primary-600 text-xl" />
+                  <div className="w-12 h-12 bg-navy-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <FaMapMarkerAlt className="text-navy-900 text-xl" />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Address</h3>
@@ -129,7 +129,7 @@ export default function ContactPage() {
                     href={siteConfig.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-primary-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-all"
+                    className="w-10 h-10 bg-navy-100 hover:bg-navy-900 hover:text-white rounded-full flex items-center justify-center transition-all"
                     aria-label="Facebook"
                   >
                     <FaFacebook size={20} />
@@ -138,7 +138,7 @@ export default function ContactPage() {
                     href={siteConfig.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-primary-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-all"
+                    className="w-10 h-10 bg-navy-100 hover:bg-navy-900 hover:text-white rounded-full flex items-center justify-center transition-all"
                     aria-label="Instagram"
                   >
                     <FaInstagram size={20} />
@@ -147,7 +147,7 @@ export default function ContactPage() {
                     href={siteConfig.social.youtube}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-primary-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-all"
+                    className="w-10 h-10 bg-navy-100 hover:bg-navy-900 hover:text-white rounded-full flex items-center justify-center transition-all"
                     aria-label="YouTube"
                   >
                     <FaYoutube size={20} />
@@ -156,7 +156,7 @@ export default function ContactPage() {
                     href={siteConfig.social.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-primary-100 hover:bg-primary-600 hover:text-white rounded-full flex items-center justify-center transition-all"
+                    className="w-10 h-10 bg-navy-100 hover:bg-navy-900 hover:text-white rounded-full flex items-center justify-center transition-all"
                     aria-label="Twitter"
                   >
                     <FaTwitter size={20} />
@@ -338,3 +338,5 @@ export default function ContactPage() {
     </div>
   );
 }
+
+

@@ -46,47 +46,121 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-primary-800 to-indigo-900 text-white py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/patterns/grid.svg')] opacity-5"></div>
-        <div className="absolute top-0 left-1/4 w-72 h-72 bg-accent-DEFAULT rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-400 rounded-full filter blur-3xl opacity-15 animate-pulse delay-1000"></div>
+      {/* Premium Hero Section */}
+      <section className="relative bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 text-white pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.15) 1px, transparent 0)`,
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
+        
+        {/* Soft Gradient Orbs */}
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-gold-500 rounded-full filter blur-3xl opacity-10 animate-pulse-soft"></div>
+        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-navy-700 rounded-full filter blur-3xl opacity-15"></div>
+        
         <div className="container-custom relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Hero Content */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                {siteConfig.hero.headline}
+              {/* Badge */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gold-500/20 backdrop-blur-sm border border-gold-500/30 rounded-full text-sm font-medium text-gold-200 mb-6"
+              >
+                <span className="w-2 h-2 bg-gold-500 rounded-full animate-pulse"></span>
+                Leading Coaching Institute in Haldwani
+              </motion.div>
+              
+              {/* Heading */}
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                <span className="block text-white">Building Strong</span>
+                <span className="block gradient-text-gold mt-2">Foundations</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-100">
-                {siteConfig.hero.subtext}
+              
+              {/* Subheading */}
+              <p className="text-xl md:text-2xl mb-8 text-white opacity-90 leading-relaxed max-w-2xl">
+                Empowering students with quality education, expert guidance, and proven results for JEE, NEET, and Board Excellence.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className="btn-primary bg-gradient-to-r from-accent-DEFAULT to-accent-dark hover:from-accent-dark hover:to-accent-DEFAULT shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                  {siteConfig.hero.ctaPrimary}
+              
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Link href="/contact" className="btn-gold inline-flex items-center justify-center gap-2 group">
+                  <span>Enroll Now</span>
+                  <FaRocket className="group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
-                <Link href="/courses" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300">
-                  {siteConfig.hero.ctaSecondary}
+                <Link href="/courses" className="btn-outline inline-flex items-center justify-center gap-2 group hover:text-white">
+                  <span>Explore Courses</span>
+                  <FaChartLine className="group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
               </div>
+              
+              {/* Trust Indicators */}
+              <motion.div
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10"
+              >
+                <div>
+                  <div className="text-3xl font-bold text-gold-400 mb-1">92%</div>
+                  <div className="text-sm text-gray-300">Success Rate</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-gold-400 mb-1">150+</div>
+                  <div className="text-sm text-gray-300">Students</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-gold-400 mb-1">25+</div>
+                  <div className="text-sm text-gray-300">Toppers</div>
+                </div>
+              </motion.div>
             </motion.div>
             
+            {/* Hero Image */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="hidden md:block"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="hidden lg:block"
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-accent-DEFAULT rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                <img
-                  src="https://lh3.googleusercontent.com/p/AF1QipODkIHe2idT_SPiR5KxjczPYp9rM6rkHtBTr3rT=s680-w680-h510-rw"
-                  alt="NEEV Foundation"
-                  className="relative rounded-2xl shadow-2xl animate-float"
-                />
+                {/* Subtle Glow */}
+                <div className="absolute -inset-4 bg-gradient-to-tr from-gold-500/15 to-navy-700/15 rounded-3xl blur-2xl"></div>
+                
+                {/* Image Container */}
+                <div className="relative">
+                  <img
+                    src={getAssetPath("/images/branding/physical_centre.jpg")}
+                    alt="NEEV Foundation Coaching Centre"
+                    className="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
+                  />
+                  
+                  {/* Floating Badge */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.6 }}
+                    className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-6"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center">
+                        <FaMedal className="text-navy-950 text-xl" />
+                      </div>
+                      <div>
+                        <div className="text-2xl font-bold text-navy-950">5+ Years</div>
+                        <div className="text-sm text-gray-600">Academic Excellence</div>
+                      </div>
+                    </div>
+                  </motion.div>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -94,21 +168,31 @@ export default function Home() {
       </section>
 
       {/* Premium Stats Section */}
-      <section className="bg-gradient-to-r from-slate-50 via-white to-blue-50 py-16 shadow-2xl -mt-8 relative z-20 border-t border-gray-100">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-50/50 to-accent-light/30"></div>
+      <section className="relative bg-white py-20 shadow-xl -mt-10 z-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gold-50/20"></div>
+        
         <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-800 via-primary-600 to-indigo-600 bg-clip-text text-transparent mb-4">
-              Our Success Story
+            <motion.span
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="inline-block px-5 py-2 bg-gold-100 text-gold-700 rounded-full text-sm font-semibold tracking-wide uppercase mb-4"
+            >
+              Our Impact
+            </motion.span>
+            <h2 className="section-title gradient-text-navy">
+              Building Success Stories
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
-              Transforming dreams into reality with proven results and excellence
+            <p className="section-subtitle">
+              Empowering students with quality education and proven results that speak for themselves
             </p>
           </motion.div>
 
@@ -118,83 +202,121 @@ export default function Home() {
               label="Students Taught" 
               icon={<FaUsers />} 
               index={0}
-              gradient="from-blue-500 to-blue-700"
+              gradient="from-navy-800 to-navy-950"
             />
             <StatCard 
               number="92%" 
               label="Success Rate" 
               icon={<FaTrophy />} 
               index={1}
-              gradient="from-green-500 to-green-700"
+              gradient="from-gold-500 to-gold-600"
             />
             <StatCard 
               number="25+" 
               label="Top Performers" 
               icon={<FaCrown />} 
               index={2}
-              gradient="from-purple-500 to-purple-700"
+              gradient="from-navy-900 to-navy-950"
             />
             <StatCard 
               number="5+" 
               label="Expert Faculty" 
               icon={<FaChalkboardTeacher />} 
               index={3}
-              gradient="from-orange-500 to-orange-700"
+              gradient="from-gold-600 to-gold-700"
             />
           </div>
 
-          {/* Success Metrics */}
+          {/* Success Metrics - Premium Design */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="mt-16 bg-white rounded-3xl p-8 shadow-2xl border border-gray-100"
+            className="mt-20 card p-10"
           >
-            <h3 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-primary-600 to-accent-DEFAULT bg-clip-text text-transparent">
-              Achievement Metrics 2024-25
-            </h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <AnimatedProgressBar percentage={85} label="Board Exam Excellence" color="bg-gradient-to-r from-blue-500 to-blue-600" delay={200} />
-                <AnimatedProgressBar percentage={78} label="Competitive Exam Success" color="bg-gradient-to-r from-green-500 to-green-600" delay={400} />
-                <AnimatedProgressBar percentage={92} label="Foundation Program Success" color="bg-gradient-to-r from-purple-500 to-purple-600" delay={600} />
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-navy-950 mb-3">
+                Achievement Metrics
+                <span className="gradient-text-gold ml-3">2024-25</span>
+              </h3>
+              <p className="text-gray-700 text-lg">
+                Measuring excellence through consistent performance across all programs
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-12">
+              <div className="space-y-6">
+                <AnimatedProgressBar percentage={85} label="Board Exam Excellence" color="bg-gradient-to-r from-navy-800 to-navy-950" delay={200} />
+                <AnimatedProgressBar percentage={78} label="Competitive Exam Success" color="bg-gradient-to-r from-gold-500 to-gold-600" delay={400} />
+                <AnimatedProgressBar percentage={92} label="Foundation Program Success" color="bg-gradient-to-r from-navy-900 to-navy-950" delay={600} />
               </div>
-              <div>
-                <AnimatedProgressBar percentage={88} label="Student Improvement Rate" color="bg-gradient-to-r from-orange-500 to-orange-600" delay={800} />
-                <AnimatedProgressBar percentage={95} label="Student Satisfaction" color="bg-gradient-to-r from-red-500 to-red-600" delay={1000} />
-                <AnimatedProgressBar percentage={90} label="Parent Satisfaction" color="bg-gradient-to-r from-pink-500 to-pink-600" delay={1200} />
+              <div className="space-y-6">
+                <AnimatedProgressBar percentage={88} label="Student Improvement Rate" color="bg-gradient-to-r from-gold-600 to-gold-700" delay={800} />
+                <AnimatedProgressBar percentage={95} label="Student Satisfaction" color="bg-gradient-to-r from-navy-800 to-navy-950" delay={1000} />
+                <AnimatedProgressBar percentage={90} label="Parent Satisfaction" color="bg-gradient-to-r from-gold-500 to-gold-600" delay={1200} />
               </div>
             </div>
+            
+            {/* Call-to-Action within Stats */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="mt-12 text-center"
+            >
+              <Link href="/results" className="inline-flex items-center gap-2 text-navy-800 font-semibold hover:text-gold-600 transition-colors group">
+                <span>View Detailed Results</span>
+                <FaChartLine className="group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      {/* About Section - Premium Design */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gold-50/30 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gold-300 rounded-full filter blur-3xl opacity-15"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-navy-300 rounded-full filter blur-3xl opacity-15"></div>
+        
+        <div className="container-custom relative z-10">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="section-title">
-                About <span className="gradient-text">NEEV Foundation</span>
+              <span className="inline-block px-5 py-2 bg-navy-100 text-navy-800 rounded-full text-sm font-semibold tracking-wide uppercase mb-6">
+                About Us
+              </span>
+              
+              <h2 className="text-4xl md:text-5xl font-bold text-navy-950 mb-6 leading-tight">
+                Building the
+                <span className="block gradient-text-gold mt-1">Foundation of Success</span>
               </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              
+              <p className="text-lg text-gray-800 mb-6 leading-relaxed">
                 {siteConfig.about}
               </p>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              
+              <p className="text-gray-700 mb-8 leading-relaxed">
                 Born from the legacy of Pi Square Coaching Centre, NEEV Foundation has been serving
                 the educational needs of Haldwani students for years. Our dedicated faculty of 5 experienced 
                 teachers provides personalized attention in small batch sizes, ensuring every student gets 
                 the support they need to excel in their academic journey.
               </p>
-              <Link href="/about" className="btn-primary">
-                Learn More About Us
-              </Link>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/about" className="btn-primary inline-flex items-center justify-center gap-2">
+                  <span>Learn More About Us</span>
+                  <FaRocket className="text-lg" />
+                </Link>
+                <Link href="/contact" className="btn-outline inline-flex items-center justify-center gap-2">
+                  <span>Contact Us</span>
+                </Link>
+              </div>
             </motion.div>
 
             <motion.div
@@ -204,34 +326,72 @@ export default function Home() {
               viewport={{ once: true }}
               className="grid grid-cols-2 gap-6"
             >
-              <div className="card p-6">
-                <FaChalkboardTeacher className="text-5xl text-primary-600 mb-4" />
-                <h3 className="text-xl font-bold mb-2">Expert Faculty</h3>
-                <p className="text-gray-600">5 dedicated teachers</p>
-              </div>
-              <div className="card p-6">
-                <FaUsers className="text-5xl text-accent-DEFAULT mb-4" />
-                <h3 className="text-xl font-bold mb-2">Small Batches</h3>
-                <p className="text-gray-600">Max 25-35 students per batch</p>
-              </div>
-              <div className="card p-6">
-                <FaAward className="text-5xl text-primary-600 mb-4" />
-                <h3 className="text-xl font-bold mb-2">Proven Results</h3>
-                <p className="text-gray-600">Excellent board results</p>
-              </div>
-              <div className="card p-6">
-                <FaRocket className="text-5xl text-accent-DEFAULT mb-4" />
-                <h3 className="text-xl font-bold mb-2">Personal Care</h3>
-                <p className="text-gray-600">Individual attention</p>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="card p-8"
+              >
+                <div className="w-14 h-14 bg-gradient-to-br from-navy-800 to-navy-950 rounded-xl flex items-center justify-center mb-4">
+                  <FaChalkboardTeacher className="text-3xl text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-navy-950">Expert Faculty</h3>
+                <p className="text-gray-700">5 dedicated teachers with years of experience</p>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="card-gold p-8"
+              >
+                <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-4">
+                  <FaUsers className="text-3xl text-navy-950" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-navy-950">Small Batches</h3>
+                <p className="text-navy-800">Max 25-35 students for personal attention</p>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="card-gold p-8"
+              >
+                <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-4">
+                  <FaAward className="text-3xl text-navy-950" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-navy-950">Proven Results</h3>
+                <p className="text-navy-800">Consistent excellence in board exams</p>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="card p-8"
+              >
+                <div className="w-14 h-14 bg-gradient-to-br from-navy-900 to-navy-950 rounded-xl flex items-center justify-center mb-4">
+                  <FaRocket className="text-3xl text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-navy-950">Personal Care</h3>
+                <p className="text-gray-700">Individual attention for every student</p>
+              </motion.div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Featured Courses */}
-      <section className="py-20 bg-white">
-        <div className="container-custom">
+      {/* Featured Courses - Premium Design */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="absolute top-1/2 left-0 w-72 h-72 bg-navy-200 rounded-full filter blur-3xl opacity-10"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-200 rounded-full filter blur-3xl opacity-10"></div>
+        
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -239,17 +399,24 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
+            <span className="inline-block px-5 py-2 bg-gold-100 text-gold-700 rounded-full text-sm font-semibold tracking-wide uppercase mb-4">
+              Our Programs
+            </span>
+            
             <h2 className="section-title">
-              Our <span className="gradient-text">Featured Courses</span>
+              <span className="gradient-text-navy">Featured Courses</span>
             </h2>
+            
             <p className="section-subtitle">
-              Choose the right program to achieve your academic goals
+              Comprehensive programs designed to transform students into achievers
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredCourses.map((course, index) => {
               const Icon = iconMap[course.icon] || FaBookReader;
+              const isGold = index % 2 === 1;
+              
               return (
                 <motion.div
                   key={course.id}
@@ -257,26 +424,30 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="card p-6 text-center group"
+                  className={`${isGold ? 'card-gold' : 'card'} p-8 text-center group`}
                 >
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <Icon className="text-4xl text-primary-600" />
+                  <div className={`w-20 h-20 ${isGold ? 'bg-white' : 'bg-gradient-to-br from-navy-800 to-navy-950'} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300 shadow-lg`}>
+                    <Icon className={`text-4xl ${isGold ? 'text-navy-950' : 'text-white'}`} />
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">
+                  
+                  <h3 className={`text-xl font-bold mb-2 ${isGold ? 'text-navy-950' : 'text-navy-950'}`}>
                     {course.title}
                   </h3>
-                  <p className="text-sm text-primary-600 font-semibold mb-4">
+                  
+                  <p className={`text-sm font-semibold mb-4 ${isGold ? 'text-navy-800' : 'text-navy-700'}`}>
                     {course.subtitle}
                   </p>
-                  <p className="text-gray-600 text-sm mb-6 line-clamp-3">
+                  
+                  <p className={`text-sm mb-6 line-clamp-3 leading-relaxed ${isGold ? 'text-navy-800' : 'text-gray-700'}`}>
                     {course.description}
                   </p>
+                  
                   <Link
                     href={`/courses#${course.id}`}
-                    className="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2 group"
+                    className={`inline-flex items-center gap-2 ${isGold ? 'text-navy-950 hover:text-gold-600' : 'text-navy-800 hover:text-gold-600'} font-semibold group`}
                   >
-                    View Details
-                    <span className="group-hover:translate-x-2 transition-transform">→</span>
+                    <span>View Details</span>
+                    <FaChartLine className="group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </motion.div>
               );
@@ -286,20 +457,24 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <Link href="/courses" className="btn-primary">
-              View All Courses
+            <Link href="/courses" className="btn-gold inline-flex items-center gap-2">
+              <span>View All Courses</span>
+              <FaRocket />
             </Link>
           </motion.div>
         </div>
       </section>
 
-      {/* Top Performers Preview */}
-      <section className="py-20 bg-gradient-to-br from-primary-50 to-blue-50">
-        <div className="container-custom">
+      {/* Top Performers Preview - Premium Design */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gold-50/20 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-navy-200 rounded-full filter blur-3xl opacity-10"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-200 rounded-full filter blur-3xl opacity-10"></div>
+        
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -307,11 +482,16 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
+            <span className="inline-block px-5 py-2 bg-gold-100 text-gold-700 rounded-full text-sm font-semibold tracking-wide uppercase mb-4">
+              Hall of Fame
+            </span>
+            
             <h2 className="section-title">
-              Our <span className="gradient-text">Star Achievers</span>
+              Our <span className="gradient-text-gold">Star Achievers</span>
             </h2>
+            
             <p className="section-subtitle">
-              Celebrating excellence and inspiring future toppers
+              Celebrating excellence and inspiring the next generation of toppers
             </p>
           </motion.div>
 
@@ -319,33 +499,43 @@ export default function Home() {
             {recentToppers.map((topper, index) => (
               <motion.div
                 key={topper.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="card p-6"
+                className="card p-8"
               >
-                <div className="flex items-start gap-4">
-                  <img
-                    src={topper.image}
-                    alt={topper.name}
-                    className="w-20 h-20 rounded-full object-cover border-4 border-primary-200"
-                  />
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="relative">
+                    <img
+                      src={topper.image}
+                      alt={topper.name}
+                      className="w-20 h-20 rounded-2xl object-cover shadow-lg"
+                    />
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-gold-500 to-gold-600 rounded-full flex items-center justify-center shadow-lg">
+                      <FaStar className="text-navy-950 text-sm" />
+                    </div>
+                  </div>
+                  
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-1">
+                    <h3 className="text-xl font-bold text-navy-950 mb-1">
                       {topper.name}
                     </h3>
-                    <p className="text-primary-600 font-semibold mb-2">
+                    <p className="text-gold-600 font-semibold mb-2 flex items-center gap-1">
+                      <FaCrown className="text-sm" />
                       {topper.rank}
                     </p>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gray-700 font-medium">
                       {topper.exam} • {topper.year}
                     </p>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm mt-4 italic">
-                  "{topper.testimonial}"
-                </p>
+                
+                <div className="bg-gradient-to-br from-gray-50 to-gold-50/30 rounded-xl p-4 border border-gold-200/30">
+                  <p className="text-gray-800 text-sm italic leading-relaxed">
+                    "{topper.testimonial}"
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -353,12 +543,13 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <Link href="/results" className="btn-primary">
-              View All Results
+            <Link href="/results" className="btn-primary inline-flex items-center gap-2">
+              <span>View All Results</span>
+              <FaTrophy />
             </Link>
           </motion.div>
         </div>
@@ -371,34 +562,13 @@ export default function Home() {
       <AwardsAndCertifications />
 
       {/* Premium CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{backgroundImage: getBackgroundImageUrl('/images/patterns/dots.svg')}}></div>
+      <section className="py-28 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5" style={{backgroundImage: getBackgroundImageUrl('/images/patterns/dots.svg')}}></div>
         
-        {/* Floating elements */}
-        <motion.div
-          animate={{ 
-            y: [0, -20, 0],
-            rotate: [0, 5, 0]
-          }}
-          transition={{ 
-            duration: 6, 
-            repeat: Infinity, 
-            ease: "easeInOut"
-          }}
-          className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full"
-        ></motion.div>
-        <motion.div
-          animate={{ 
-            y: [0, 20, 0],
-            rotate: [0, -5, 0]
-          }}
-          transition={{ 
-            duration: 8, 
-            repeat: Infinity, 
-            ease: "easeInOut"
-          }}
-          className="absolute bottom-20 right-10 w-16 h-16 bg-accent-light/20 rounded-full"
-        ></motion.div>
+        {/* Animated Background Elements */}
+        <div className="absolute top-10 left-10 w-72 h-72 bg-gold-500 rounded-full filter blur-3xl opacity-15 animate-float"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-navy-700 rounded-full filter blur-3xl opacity-20 animate-pulse-soft"></div>
+        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-gold-400 rounded-full filter blur-3xl opacity-10 animate-float" style={{ animationDelay: '2s' }}></div>
 
         <div className="container-custom relative z-10">
           <motion.div
@@ -406,93 +576,96 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center max-w-4xl mx-auto"
+            className="text-center max-w-5xl mx-auto"
           >
             <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="text-8xl mb-6"
+              initial={{ scale: 0, rotate: -180 }}
+              whileInView={{ scale: 1, rotate: 0 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 200, duration: 0.6 }}
+              className="text-8xl mb-8"
             >
-              🚀
+              🎯
             </motion.div>
             
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-accent-light to-white bg-clip-text text-transparent">
-              Transform Your Academic Future Today
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+              <span className="block text-white">Transform Your</span>
+              <span className="block gradient-text-gold mt-2">Academic Future Today</span>
             </h2>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed font-medium">
-              Join the success story of hundreds of students who turned their dreams into achievements with NEEV's proven excellence
+            
+            <p className="text-xl md:text-2xl mb-10 text-white leading-relaxed font-light max-w-3xl mx-auto opacity-90">
+              Join the success story of 150+ students who turned their dreams into achievements with NEEV's proven excellence
             </p>
 
-            {/* Special offer banner */}
+            {/* Premium Offer Card */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4, type: "spring", stiffness: 150 }}
+              transition={{ delay: 0.4, type: "spring", stiffness: 150, duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-accent-DEFAULT to-accent-dark rounded-2xl p-6 mb-8 border-2 border-accent-light/30"
+              className="bg-gradient-to-r from-gold-500 to-gold-600 rounded-3xl p-8 mb-10 shadow-2xl shimmer"
             >
               <div className="flex items-center justify-center gap-4 mb-4">
-                <span className="text-3xl">🎯</span>
-                <span className="text-2xl font-bold">Exclusive Opportunity</span>
-                <span className="text-3xl">🚀</span>
+                <FaFire className="text-4xl text-navy-950 animate-pulse" />
+                <span className="text-3xl font-bold text-navy-950">Limited Time Offer</span>
+                <FaRocket className="text-4xl text-navy-950 animate-pulse" />
               </div>
-              <p className="text-lg mb-2">Get <span className="text-3xl font-bold text-white">FREE</span> expert counselling & roadmap session</p>
-              <p className="text-sm opacity-80">+ Free study materials worth ₹5,000</p>
+              <p className="text-2xl mb-3 font-bold text-navy-950">Get <span className="text-4xl">FREE</span> Expert Counselling Session</p>
+              <p className="text-lg text-navy-800">+ Complimentary study materials worth ₹5,000</p>
             </motion.div>
 
+            {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
               viewport={{ once: true }}
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
             >
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link 
-                  href="/contact" 
-                  className="bg-accent-DEFAULT hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-2xl hover:shadow-accent-DEFAULT/25 text-lg flex items-center gap-3"
-                >
-                  <span>🎯</span>
-                  Enroll Now
-                  <span>→</span>
-                </Link>
-              </motion.div>
+              <Link 
+                href="/contact" 
+                className="btn-gold inline-flex items-center gap-3 text-lg group"
+              >
+                <FaRocket />
+                <span>Enroll Now</span>
+                <FaChartLine className="group-hover:translate-x-1 transition-transform" />
+              </Link>
               
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link 
-                  href="/contact" 
-                  className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 font-semibold py-4 px-8 rounded-xl transition-all duration-300 backdrop-blur-sm text-lg flex items-center gap-3"
-                >
-                  <span>📞</span>
-                  Book Free Counselling
-                </Link>
-              </motion.div>
+              <Link 
+                href="/contact" 
+                className="btn-outline inline-flex items-center gap-3 text-lg hover:text-white"
+              >
+                <span>📞</span>
+                <span>Book Free Counselling</span>
+              </Link>
             </motion.div>
 
-            {/* Trust indicators */}
+            {/* Trust Indicators */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
               viewport={{ once: true }}
-              className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+              className="grid grid-cols-2 md:grid-cols-4 gap-6"
             >
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">8+</div>
-                <div className="text-sm opacity-80">Years Experience</div>
+              <div className="glass-dark rounded-2xl p-6">
+                <FaTrophy className="text-3xl text-gold-400 mx-auto mb-2" />
+                <div className="text-3xl font-bold mb-1">5+</div>
+                <div className="text-sm text-gray-300">Years Excellence</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">500+</div>
-                <div className="text-sm opacity-80">Students Taught</div>
+              <div className="glass-dark rounded-2xl p-6">
+                <FaUsers className="text-3xl text-gold-400 mx-auto mb-2" />
+                <div className="text-3xl font-bold mb-1">150+</div>
+                <div className="text-sm text-gray-300">Students Taught</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">92%</div>
-                <div className="text-sm opacity-80">Success Rate</div>
+              <div className="glass-dark rounded-2xl p-6">
+                <FaCrown className="text-3xl text-gold-400 mx-auto mb-2" />
+                <div className="text-3xl font-bold mb-1">92%</div>
+                <div className="text-sm text-gray-300">Success Rate</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">5</div>
-                <div className="text-sm opacity-80">Dedicated Faculty</div>
+              <div className="glass-dark rounded-2xl p-6">
+                <FaChalkboardTeacher className="text-3xl text-gold-400 mx-auto mb-2" />
+                <div className="text-3xl font-bold mb-1">5</div>
+                <div className="text-sm text-gray-300">Expert Faculty</div>
               </div>
             </motion.div>
           </motion.div>
@@ -501,3 +674,4 @@ export default function Home() {
     </div>
   );
 }
+

@@ -41,7 +41,7 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white py-20">
+      <section className="bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 text-white py-20">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -56,10 +56,10 @@ export default function AboutPage() {
                 className="w-16 h-16 rounded-full object-cover"
               />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               About NEEV – THE FOUNDATION
             </h1>
-            <p className="text-xl text-gray-100">
+            <p className="text-xl text-white opacity-90">
               Building strong foundations for a brighter future since 2008
             </p>
           </motion.div>
@@ -77,10 +77,12 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="card p-8"
             >
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
-                <FaBullseye className="text-4xl text-primary-600" />
+              <div className="w-16 h-16 bg-navy-100 rounded-full flex items-center justify-center mb-6">
+                <FaBullseye className="text-4xl text-navy-900" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
+              <h3 className="text-2xl font-bold mb-4 text-navy-950">
+                Our Mission
+              </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
                 To make quality education accessible to all learners by providing comprehensive coaching,
                 personalized attention, and innovative teaching methods that empower students to achieve
@@ -95,8 +97,8 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="card p-8"
             >
-              <div className="w-16 h-16 bg-accent-light/20 rounded-full flex items-center justify-center mb-6">
-                <FaEye className="text-4xl text-accent-DEFAULT" />
+              <div className="w-16 h-16 bg-gold-500/20 rounded-full flex items-center justify-center mb-6">
+                <FaEye className="text-4xl text-gold-600" />
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h2>
               <p className="text-gray-700 leading-relaxed text-lg">
@@ -183,8 +185,8 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 className="card p-6 text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="text-3xl text-primary-600" />
+                <div className="w-16 h-16 bg-gradient-to-br from-navy-100 to-navy-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <value.icon className="text-3xl text-navy-900" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
@@ -195,7 +197,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 bg-gradient-to-br from-primary-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-navy-50 to-blue-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -222,7 +224,7 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 className="flex items-center gap-6 mb-8"
               >
-                <div className="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-primary-600 to-primary-700 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                <div className="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-navy-900 to-navy-950 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
                   {milestone.year}
                 </div>
                 <div className="flex-1 bg-white p-6 rounded-xl shadow-lg">
@@ -254,12 +256,12 @@ export default function AboutPage() {
                   />
                   <div className="mt-4 text-center">
                     <h3 className="text-2xl font-bold text-gray-900">Director's Message</h3>
-                    <p className="text-primary-600 font-semibold">Founder & Director</p>
+                    <p className="text-navy-900 font-semibold">Founder & Director</p>
                   </div>
                 </div>
                 <div className="md:col-span-2">
                   <div className="mb-6">
-                    <span className="text-6xl text-primary-200">"</span>
+                    <span className="text-6xl text-navy-200">"</span>
                   </div>
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
                     Education is not just about clearing exams – it's about building character, nurturing
@@ -280,7 +282,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+      <section className="py-16 bg-gradient-to-r from-navy-900 to-navy-950 text-white">
         <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -288,14 +290,14 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Be Part of Our Success Story
             </h2>
-            <p className="text-xl mb-8 text-gray-100">
+            <p className="text-xl mb-8 text-white opacity-90">
               Join hundreds of successful students who chose NEEV
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary bg-accent-DEFAULT hover:bg-accent-dark">
+              <Link href="/contact" className="btn-primary bg-gold-600 hover:bg-gold-700">
                 Enroll Now
               </Link>
               <Link href="/courses" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white">
@@ -308,3 +310,6 @@ export default function AboutPage() {
     </div>
   );
 }
+
+
+

@@ -5,9 +5,9 @@ import { FaGavel, FaUserGraduate, FaClipboardCheck, FaExclamationTriangle } from
 
 export default function TermsOfServicePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-primary-50 to-white">
+    <main className="min-h-screen bg-gradient-to-br from-navy-50 to-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-700 to-primary-900 text-white py-20">
+      <section className="bg-gradient-to-r from-navy-950 to-navy-900 text-white py-20">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -15,8 +15,8 @@ export default function TermsOfServicePage() {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <FaGavel className="text-6xl mx-auto mb-6 text-accent-light" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <FaGavel className="text-6xl mx-auto mb-6 text-gold-500" />
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Terms of Service
             </h1>
             <p className="text-xl text-gray-200">
@@ -38,7 +38,7 @@ export default function TermsOfServicePage() {
           >
             <div className="bg-white rounded-xl shadow-lg p-8">
               <div className="flex items-center gap-4 mb-6">
-                <FaClipboardCheck className="text-3xl text-primary-600" />
+                <FaClipboardCheck className="text-3xl text-navy-900" />
                 <h2 className="text-3xl font-bold text-gray-900">Acceptance of Terms</h2>
               </div>
               <div className="space-y-4 text-gray-700">
@@ -53,7 +53,7 @@ export default function TermsOfServicePage() {
 
             <div className="bg-white rounded-xl shadow-lg p-8">
               <div className="flex items-center gap-4 mb-6">
-                <FaUserGraduate className="text-3xl text-primary-600" />
+                <FaUserGraduate className="text-3xl text-navy-900" />
                 <h2 className="text-3xl font-bold text-gray-900">Educational Services</h2>
               </div>
               <div className="space-y-4 text-gray-700">
@@ -122,7 +122,7 @@ export default function TermsOfServicePage() {
 
             <div className="bg-white rounded-xl shadow-lg p-8">
               <div className="flex items-center gap-4 mb-6">
-                <FaExclamationTriangle className="text-3xl text-accent-DEFAULT" />
+                <FaExclamationTriangle className="text-3xl text-gold-600" />
                 <h2 className="text-3xl font-bold text-gray-900">Limitation of Liability</h2>
               </div>
               <div className="space-y-4 text-gray-700">
@@ -162,7 +162,7 @@ export default function TermsOfServicePage() {
                 <p>
                   For any questions regarding these Terms of Service, please contact us:
                 </p>
-                <div className="bg-primary-50 p-4 rounded-lg">
+                <div className="bg-navy-50 p-4 rounded-lg">
                   <p><strong>Email:</strong> legal@NEEV-foundation.edu</p>
                   <p><strong>Phone:</strong> +91 9876543210</p>
                   <p><strong>Address:</strong> 123 Education Street, Learning District, City - 456789</p>
@@ -178,3 +178,5 @@ export default function TermsOfServicePage() {
     </main>
   );
 }
+
+

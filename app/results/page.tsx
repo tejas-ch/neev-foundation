@@ -20,7 +20,7 @@ export default function ResultsPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white py-20">
+      <section className="bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 text-white py-20">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -28,11 +28,11 @@ export default function ResultsPage() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <FaTrophy className="text-6xl mx-auto mb-6 text-accent-light" />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <FaTrophy className="text-6xl mx-auto mb-6 text-gold-500" />
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               Our Star Achievers
             </h1>
-            <p className="text-xl text-gray-100">
+            <p className="text-xl text-white opacity-90">
               Celebrating excellence and the success stories of our brilliant students
             </p>
           </motion.div>
@@ -50,7 +50,7 @@ export default function ResultsPage() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-navy-900 mb-2">
                 25+
               </div>
               <div className="text-gray-600 font-medium">Toppers</div>
@@ -62,7 +62,7 @@ export default function ResultsPage() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold text-accent-DEFAULT mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-gold-600 mb-2">
                 90%+
               </div>
               <div className="text-gray-600 font-medium">Board Toppers</div>
@@ -74,7 +74,7 @@ export default function ResultsPage() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-navy-900 mb-2">
                 95%+
               </div>
               <div className="text-gray-600 font-medium">Success Rate</div>
@@ -86,7 +86,7 @@ export default function ResultsPage() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold text-accent-DEFAULT mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-gold-600 mb-2">
                 2000+
               </div>
               <div className="text-gray-600 font-medium">Selections</div>
@@ -105,8 +105,8 @@ export default function ResultsPage() {
                 onClick={() => setSelectedYear(year)}
                 className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                   selectedYear === year
-                    ? "bg-primary-600 text-white shadow-lg scale-105"
-                    : "bg-white text-gray-700 hover:bg-gray-100"
+                    ? "bg-navy-900 text-white shadow-lg scale-105"
+                    : "bg-white text-navy-900 hover:bg-gray-100 border border-gray-200"
                 }`}
               >
                 Batch {year}
@@ -126,13 +126,13 @@ export default function ResultsPage() {
                 className="card p-0 overflow-hidden group"
               >
                 {/* Top Badge */}
-                <div className="bg-gradient-to-r from-accent-DEFAULT to-accent-dark text-white py-2 px-4 text-center">
+                <div className="bg-gradient-to-r from-gold-600 to-gold-700 text-white py-2 px-4 text-center">
                   <FaStar className="inline mr-2" />
                   <span className="font-bold">{topper.rank}</span>
                 </div>
 
                 {/* Image */}
-                <div className="relative h-64 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center overflow-hidden">
+                <div className="relative h-64 bg-gradient-to-br from-navy-100 to-navy-200 flex items-center justify-center overflow-hidden">
                   <img
                     src={topper.image}
                     alt={topper.name}
@@ -145,10 +145,10 @@ export default function ResultsPage() {
 
                 {/* Details */}
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold text-navy-950 mb-2">
                     {topper.name}
                   </h3>
-                  <p className="text-primary-600 font-semibold mb-2">
+                  <p className="text-navy-900 font-semibold mb-2">
                     {topper.exam}
                   </p>
                   <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200">
@@ -158,13 +158,13 @@ export default function ResultsPage() {
                     </div>
                     <div>
                       <div className="text-sm text-gray-600">Score</div>
-                      <div className="font-bold text-accent-DEFAULT">{topper.percentage}</div>
+                      <div className="font-bold text-gold-600">{topper.percentage}</div>
                     </div>
                   </div>
                   <p className="text-sm text-gray-600 mb-4">
                     <strong>Course:</strong> {topper.course}
                   </p>
-                  <div className="bg-primary-50 p-4 rounded-lg">
+                  <div className="bg-navy-50 p-4 rounded-lg">
                     <p className="text-sm text-gray-700 italic">
                       "{topper.testimonial}"
                     </p>
@@ -186,11 +186,11 @@ export default function ResultsPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <FaMedal className="text-5xl text-accent-DEFAULT mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <FaMedal className="text-5xl text-gold-600 mx-auto mb-4" />
+            <h2 className="text-4xl font-bold text-navy-950 mb-4">
               Our Success Stories
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Every success story at NEEV is a testament to hard work, dedication, and the right guidance.
               We are proud of each student who trusted us with their dreams.
             </p>
@@ -202,11 +202,11 @@ export default function ResultsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-primary-600 to-primary-700 text-white p-8 rounded-xl"
+              className="bg-gradient-to-br from-navy-900 to-navy-950 text-white p-8 rounded-xl shadow-lg"
             >
-              <h3 className="text-3xl font-bold mb-2">JEE Success</h3>
-              <p className="text-5xl font-bold mb-4">12+</p>
-              <p className="text-gray-100">
+              <h3 className="text-3xl font-bold mb-2 text-white">JEE Success</h3>
+              <p className="text-5xl font-bold mb-4 text-white">12+</p>
+              <p className="text-white opacity-90">
                 Students qualified in JEE Main and selected in engineering colleges
               </p>
             </motion.div>
@@ -216,11 +216,11 @@ export default function ResultsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-orange-500 to-orange-600 text-white p-8 rounded-xl shadow-lg"
+              className="bg-gradient-to-br from-gold-600 to-gold-700 text-white p-8 rounded-xl shadow-lg"
             >
-              <h3 className="text-3xl font-bold mb-2">NEET Success</h3>
-              <p className="text-5xl font-bold mb-4">8+</p>
-              <p className="text-orange-100">
+              <h3 className="text-3xl font-bold mb-2 text-white">NEET Success</h3>
+              <p className="text-5xl font-bold mb-4 text-white">8+</p>
+              <p className="text-white opacity-90">
                 Students qualified in NEET and admitted to medical colleges
               </p>
             </motion.div>
@@ -230,11 +230,11 @@ export default function ResultsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-primary-600 to-primary-700 text-white p-8 rounded-xl"
+              className="bg-gradient-to-br from-navy-900 to-navy-950 text-white p-8 rounded-xl shadow-lg"
             >
-              <h3 className="text-3xl font-bold mb-2">Board Excellence</h3>
-              <p className="text-5xl font-bold mb-4">95%+</p>
-              <p className="text-gray-100">
+              <h3 className="text-3xl font-bold mb-2 text-white">Board Excellence</h3>
+              <p className="text-5xl font-bold mb-4 text-white">95%+</p>
+              <p className="text-white opacity-90">
                 Students scoring above 90% in board exams consistently
               </p>
             </motion.div>
@@ -243,7 +243,7 @@ export default function ResultsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+      <section className="py-16 bg-gradient-to-r from-navy-950 to-navy-900 text-white">
         <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -251,13 +251,13 @@ export default function ResultsPage() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Be the Next Success Story
             </h2>
-            <p className="text-xl mb-8 text-gray-100">
+            <p className="text-xl mb-8 text-white opacity-90">
               Join NEEV and write your own success story
             </p>
-            <a href="/contact" className="btn-primary bg-accent-DEFAULT hover:bg-accent-dark">
+            <a href="/contact" className="btn-gold">
               Start Your Journey
             </a>
           </motion.div>
@@ -266,3 +266,4 @@ export default function ResultsPage() {
     </div>
   );
 }
+

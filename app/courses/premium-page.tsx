@@ -182,17 +182,17 @@ const CourseCard = ({ course, index }: { course: Course; index: number }) => {
         )}
 
         {/* Header */}
-        <div className="bg-gradient-to-br from-primary-50 to-primary-100 p-8 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-primary-200 rounded-full -translate-y-16 translate-x-16 opacity-30"></div>
+        <div className="bg-gradient-to-br from-navy-50 to-navy-100 p-8 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-navy-200 rounded-full -translate-y-16 translate-x-16 opacity-30"></div>
           
           <div className="flex items-start justify-between relative z-10">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-navy-800 to-navy-950 rounded-2xl flex items-center justify-center shadow-lg">
                 <Icon className="text-3xl text-white" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-1">{course.title}</h3>
-                <p className="text-primary-600 font-semibold">{course.subtitle}</p>
+                <p className="text-navy-900 font-semibold">{course.subtitle}</p>
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@ const CourseCard = ({ course, index }: { course: Course; index: number }) => {
               <div className="text-sm text-gray-600">{course.rating} Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-lg font-bold text-primary-600">{course.studentsEnrolled}+</div>
+              <div className="text-lg font-bold text-navy-900">{course.studentsEnrolled}+</div>
               <div className="text-sm text-gray-600">Students</div>
             </div>
             <div className="text-center">
@@ -241,15 +241,15 @@ const CourseCard = ({ course, index }: { course: Course; index: number }) => {
           {/* Key Info */}
           <div className="space-y-3 mb-6">
             <div className="flex items-center gap-3 text-gray-600">
-              <FaUsers className="text-primary-600" />
+              <FaUsers className="text-navy-900" />
               <span>{course.targetAudience}</span>
             </div>
             <div className="flex items-center gap-3 text-gray-600">
-              <FaCalendarAlt className="text-primary-600" />
+              <FaCalendarAlt className="text-navy-900" />
               <span>Starts: {course.startDate}</span>
             </div>
             <div className="flex items-center gap-3 text-gray-600">
-              <FaChartLine className="text-primary-600" />
+              <FaChartLine className="text-navy-900" />
               <span>Instructor: {course.instructor}</span>
             </div>
           </div>
@@ -298,7 +298,7 @@ const CourseCard = ({ course, index }: { course: Course; index: number }) => {
           {/* Pricing */}
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <span className="text-3xl font-bold text-primary-600">{course.price}</span>
+              <span className="text-3xl font-bold text-navy-900">{course.price}</span>
               {course.originalPrice && (
                 <span className="text-lg text-gray-500 line-through">{course.originalPrice}</span>
               )}
@@ -317,7 +317,7 @@ const CourseCard = ({ course, index }: { course: Course; index: number }) => {
             </button>
             
             <div className="grid grid-cols-2 gap-3">
-              <button className="flex items-center justify-center gap-2 py-3 px-4 bg-primary-100 hover:bg-primary-200 rounded-xl transition-colors duration-300 text-primary-700 font-medium">
+              <button className="flex items-center justify-center gap-2 py-3 px-4 bg-navy-100 hover:bg-navy-200 rounded-xl transition-colors duration-300 text-navy-900 font-medium">
                 <FaPlay />
                 Demo Class
               </button>
@@ -331,7 +331,7 @@ const CourseCard = ({ course, index }: { course: Course; index: number }) => {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-navy-900 to-navy-950 hover:from-navy-950 hover:to-navy-950 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
               >
                 Enroll Now
                 <FaArrowRight />
@@ -365,7 +365,7 @@ export default function PremiumCoursesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white py-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/patterns/dots.svg')] opacity-10"></div>
         <div className="container-custom relative z-10">
           <motion.div
@@ -382,10 +382,10 @@ export default function PremiumCoursesPage() {
             >
               📚
             </motion.div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-accent-light to-white bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-gold-500 to-white bg-clip-text text-transparent">
               Premium Courses
             </h1>
-            <p className="text-xl md:text-2xl text-gray-100 mb-8">
+            <p className="text-xl md:text-2xl text-white opacity-90 mb-8">
               Comprehensive programs designed to build strong foundations and achieve excellence
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
@@ -402,7 +402,7 @@ export default function PremiumCoursesPage() {
         <div className="container-custom">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              <FaFilter className="text-primary-600" />
+              <FaFilter className="text-navy-900" />
               <span className="font-semibold text-gray-700">Filter by:</span>
               <div className="flex gap-2">
                 {["All", "Beginner", "Intermediate", "Advanced"].map((level) => (
@@ -448,7 +448,7 @@ export default function PremiumCoursesPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-600 to-accent-DEFAULT bg-clip-text text-transparent mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-600 to-gold-600 bg-clip-text text-transparent mb-6">
               Choose Your Path to Success
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -466,3 +466,6 @@ export default function PremiumCoursesPage() {
     </div>
   );
 }
+
+
+
