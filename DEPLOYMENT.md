@@ -1,4 +1,4 @@
-# 🚀 Deployment Guide - NEEV Foundation Website
+# Deployment Guide - NEEV Foundation Website
 
 ## Option 1: Deploy to GitHub Pages (Recommended)
 
