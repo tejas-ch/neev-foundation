@@ -5,27 +5,30 @@ import { motion } from "framer-motion";
 import { FaEye, FaBullseye, FaHeart, FaStar, FaRocket, FaUserGraduate } from "react-icons/fa";
 import Link from "next/link";
 import { getAssetPath } from "@/lib/utils";
+import PageHero from "@/components/common/PageHero";
+import SectionHeader from "@/components/common/SectionHeader";
+import IconCard from "@/components/common/IconCard";
 
 export default function AboutPage() {
   // Memoize static data to avoid recreation on every render
   const values = useMemo(() => [
     {
-      icon: FaStar,
+      icon: <FaStar />,
       title: "Excellence",
       description: "We strive for excellence in everything we do, from teaching to student support."
     },
     {
-      icon: FaHeart,
+      icon: <FaHeart />,
       title: "Integrity",
       description: "We maintain the highest standards of honesty, transparency, and ethical conduct."
     },
     {
-      icon: FaRocket,
+      icon: <FaRocket />,
       title: "Innovation",
       description: "We embrace modern teaching methods and technology to enhance learning."
     },
     {
-      icon: FaUserGraduate,
+      icon: <FaUserGraduate />,
       title: "Student-Centric",
       description: "Every decision we make is focused on student success and well-being."
     }
@@ -43,30 +46,17 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 text-white py-20">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-3xl mx-auto"
-          >
-            <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-              <img 
-                src={getAssetPath("/images/branding/neev-logo.jpg")}
-                alt="NEEV Foundation Logo" 
-                className="w-16 h-16 rounded-full object-cover"
-              />
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-              About NEEV – THE FOUNDATION
-            </h1>
-            <p className="text-xl text-white opacity-90">
-              Building strong foundations for a brighter future since 2008
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <PageHero
+        icon={
+          <img 
+            src={getAssetPath("/images/branding/neev-logo.jpg")}
+            alt="NEEV Foundation Logo" 
+            className="w-16 h-16 rounded-full object-cover"
+          />
+        }
+        title="About NEEV – THE FOUNDATION"
+        description="Building strong foundations for a brighter future since 2008"
+      />
 
       {/* Mission & Vision */}
       <section className="py-20 bg-white">
@@ -116,20 +106,10 @@ export default function AboutPage() {
       {/* Our Story */}
       <section className="py-20 bg-gray-50">
         <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="section-title">
-              Our <span className="gradient-text">Journey</span>
-            </h2>
-            <p className="section-subtitle">
-              Over 15 years of excellence in education
-            </p>
-          </motion.div>
+          <SectionHeader
+            title={<>Our <span className="gradient-text-gold">Journey</span></>}
+            subtitle="Over 15 years of excellence in education"
+          />
 
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -162,37 +142,21 @@ export default function AboutPage() {
       {/* Our Values */}
       <section className="py-20 bg-white">
         <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="section-title">
-              Our <span className="gradient-text">Core Values</span>
-            </h2>
-            <p className="section-subtitle">
-              The principles that guide everything we do
-            </p>
-          </motion.div>
+          <SectionHeader
+            title={<>Our <span className="gradient-text-gold">Core Values</span></>}
+            subtitle="The principles that guide everything we do"
+          />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <motion.div
+              <IconCard
                 key={value.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="card p-6 text-center"
-              >
-                <div className="w-16 h-16 bg-gradient-to-br from-navy-100 to-navy-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="text-3xl text-navy-900" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
-              </motion.div>
+                icon={value.icon}
+                title={value.title}
+                description={value.description}
+                index={index}
+                className="text-center"
+              />
             ))}
           </div>
         </div>
@@ -201,20 +165,10 @@ export default function AboutPage() {
       {/* Timeline */}
       <section className="py-20 bg-gradient-to-br from-navy-50 to-blue-50">
         <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="section-title">
-              Our <span className="gradient-text">Milestones</span>
-            </h2>
-            <p className="section-subtitle">
-              Key achievements in our journey
-            </p>
-          </motion.div>
+          <SectionHeader
+            title={<>Our <span className="gradient-text-gold">Milestones</span></>}
+            subtitle="Key achievements in our journey"
+          />
 
           <div className="max-w-4xl mx-auto">
             {milestones.map((milestone, index) => (
@@ -253,7 +207,7 @@ export default function AboutPage() {
                 <div className="md:col-span-1">
                   <img
                     src="https://scontent-vie1-1.cdninstagram.com/v/t51.2885-19/483658866_657302566749225_1972531173840858552_n.jpg"
-                    alt="Director"
+                    alt="Portrait of NEEV Foundation Director"
                     className="rounded-2xl shadow-xl w-full"
                   />
                   <div className="mt-4 text-center">
