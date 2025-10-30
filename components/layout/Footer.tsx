@@ -31,7 +31,7 @@ const Footer = () => {
   ], []);
 
   return (
-    <footer className="relative overflow-hidden">
+    <footer className="relative overflow-hidden" role="contentinfo">
       {/* Premium CTA Banner */}
       <div className="bg-gradient-to-r from-gold-500 via-gold-600 to-gold-500 py-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/patterns/dots.svg')] opacity-10"></div>
@@ -91,7 +91,7 @@ const Footer = () => {
               </p>
               
               {/* Premium Social Icons */}
-              <div className="flex gap-3">
+              <div className="flex gap-3" role="list" aria-label="Social media links">
                 <a
                   href={siteConfig.social.facebook}
                   target="_blank"

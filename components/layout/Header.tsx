@@ -80,8 +80,9 @@ const Header = () => {
             ? "bg-white shadow-premium py-3"
             : "bg-white/98 backdrop-blur-md py-4"
         }`}
+        role="banner"
       >
-        <nav className="container-custom flex justify-between items-center">
+        <nav className="container-custom flex justify-between items-center" role="navigation" aria-label="Main navigation">
           {/* Premium Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-14 h-14 rounded-2xl overflow-hidden shadow-lg group-hover:shadow-gold transition-all bg-gradient-to-br from-primary-600 to-primary-700 p-0.5">
@@ -129,7 +130,9 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className="lg:hidden text-primary-700 hover:text-gold-600 transition-colors p-2"
-            aria-label="Toggle menu"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
           >
             {isOpen ? <FaTimes size={26} /> : <FaBars size={26} />}
           </button>
@@ -139,10 +142,13 @@ const Header = () => {
         <AnimatePresence>
           {isOpen && (
             <motion.div
+              id="mobile-menu"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden bg-gradient-to-br from-white to-blue-50 border-t-2 border-gold-200 overflow-hidden shadow-lg"
+              role="navigation"
+              aria-label="Mobile navigation"
             >
               <div className="container-custom py-6 flex flex-col gap-3">
                 {navLinks.map((link, index) => (
