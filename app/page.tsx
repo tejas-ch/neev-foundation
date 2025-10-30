@@ -188,7 +188,7 @@ export default function Home() {
 
       {/* Premium Stats Section */}
       <section className="relative bg-white py-20 shadow-xl -mt-10 z-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gold-50/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white to-amber-50/30"></div>
         
         <div className="container-custom relative z-10">
           <motion.div
@@ -203,7 +203,7 @@ export default function Home() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="inline-block px-5 py-2 bg-gold-100 text-gold-700 rounded-full text-sm font-semibold tracking-wide uppercase mb-4"
+              className="inline-block px-5 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-semibold tracking-wide uppercase mb-4"
             >
               Our Impact
             </motion.span>
@@ -295,9 +295,9 @@ export default function Home() {
       </section>
 
       {/* About Section - Premium Design */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gold-50/30 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gold-300 rounded-full filter blur-3xl opacity-15"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-navy-300 rounded-full filter blur-3xl opacity-15"></div>
+      <section className="py-24 bg-gradient-to-br from-blue-50/40 via-white to-amber-50/25 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-300 rounded-full filter blur-3xl opacity-10"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-300 rounded-full filter blur-3xl opacity-10"></div>
         
         <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -418,7 +418,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-5 py-2 bg-gold-100 text-gold-700 rounded-full text-sm font-semibold tracking-wide uppercase mb-4">
+            <span className="inline-block px-5 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-semibold tracking-wide uppercase mb-4">
               Our Programs
             </span>
             
@@ -489,9 +489,9 @@ export default function Home() {
       </section>
 
       {/* Top Performers Preview - Premium Design */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gold-50/20 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-navy-200 rounded-full filter blur-3xl opacity-10"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-200 rounded-full filter blur-3xl opacity-10"></div>
+      <section className="py-24 bg-gradient-to-br from-blue-50/40 via-white to-amber-50/25 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-200 rounded-full filter blur-3xl opacity-8"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-200 rounded-full filter blur-3xl opacity-8"></div>
         
         <div className="container-custom relative z-10">
           <motion.div
@@ -501,7 +501,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-5 py-2 bg-gold-100 text-gold-700 rounded-full text-sm font-semibold tracking-wide uppercase mb-4">
+            <span className="inline-block px-5 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-semibold tracking-wide uppercase mb-4">
               Hall of Fame
             </span>
             

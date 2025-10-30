@@ -183,8 +183,8 @@ const CourseCard = ({ course, index }: { course: Course; index: number }) => {
         )}
 
         {/* Header */}
-        <div className="bg-gradient-to-br from-navy-50 to-navy-100 p-8 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-navy-200 rounded-full -translate-y-16 translate-x-16 opacity-30"></div>
+        <div className="bg-gradient-to-br from-navy-100 to-blue-50 p-8 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-navy-300 rounded-full -translate-y-16 translate-x-16 opacity-20"></div>
           
           <div className="flex items-start justify-between relative z-10">
             <div className="flex items-center gap-4">
@@ -367,7 +367,7 @@ export default function PremiumCoursesPage() {
   }, [filter, sortBy]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/patterns/dots.svg')] opacity-10"></div>
