@@ -10,12 +10,12 @@
   --navy-800: 26, 45, 89;
   --navy-700: 37, 57, 112;
   --navy-50: 232, 234, 242;
-  --gold-500: 240, 199, 94;
-  --gold-600: 212, 169, 68;
-  --gold-700: 184, 139, 47;
-  --gray-50: 245, 247, 250;
-  --gray-100: 228, 231, 235;
-  --gray-900: 31, 41, 51;
+  --gold-500: 218, 165, 32;
+  --gold-600: 184, 134, 11;
+  --gold-700: 133, 94, 0;
+  --gray-50: 249, 250, 251;
+  --gray-100: 243, 244, 246;
+  --gray-900: 17, 24, 39;
   --foreground-rgb: 11, 19, 43;
   --background-rgb: 255, 255, 255;
 }
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.75rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(var(--gold-600), 0.25);
+    box-shadow: 0 4px 12px rgba(var(--gold-600), 0.35);
   }
   
   .btn-gold::before {
