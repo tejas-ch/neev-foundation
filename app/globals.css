@@ -98,8 +98,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(var(--navy-950), 0.3);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(var(--navy-950), 0.35);
+  }
+  
+  .btn-primary:active {
+    transform: translateY(-1px) scale(1);
   }
   
   .btn-primary:hover::before {
@@ -138,9 +142,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .btn-gold:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(var(--gold-600), 0.4);
-    filter: brightness(1.05);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(var(--gold-600), 0.5), 0 6px 14px rgba(var(--gold-500), 0.3);
+    filter: brightness(1.08);
+  }
+  
+  .btn-gold:active {
+    transform: translateY(-1px) scale(1);
   }
   
   .btn-gold:hover::before {
@@ -169,8 +177,12 @@ h1, h2, h3, h4, h5, h6 {
     background: rgb(var(--navy-950));
     color: white;
     border-color: rgb(var(--navy-950));
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(var(--navy-950), 0.2);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(var(--navy-950), 0.25);
+  }
+  
+  .btn-outline:active {
+    transform: translateY(-1px) scale(1);
   }
 
   .card {
@@ -178,14 +190,32 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgb(var(--gray-100));
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 2px 8px rgba(var(--navy-950), 0.04);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(var(--navy-950), 0.04), 0 1px 3px rgba(var(--navy-950), 0.02);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, rgb(var(--navy-900)), rgb(var(--gold-500)));
+    transform: scaleX(0);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card:hover::before {
+    transform: scaleX(1);
   }
   
   .card:hover {
     border-color: rgb(var(--gold-500));
-    box-shadow: 0 8px 24px rgba(var(--navy-950), 0.12);
-    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(var(--navy-950), 0.15), 0 4px 12px rgba(var(--gold-500), 0.1);
+    transform: translateY(-6px);
   }
 
   .card-navy {
@@ -194,28 +224,64 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 1rem;
     padding: 2rem;
     color: white;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-navy::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgb(var(--gold-500)) 0%, transparent 50%, rgb(var(--gold-600)) 100%);
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card-navy:hover::before {
+    opacity: 0.1;
   }
   
   .card-navy:hover {
-    box-shadow: 0 12px 32px rgba(var(--navy-950), 0.4);
-    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(var(--navy-950), 0.6), 0 8px 20px rgba(var(--gold-500), 0.2);
+    transform: translateY(-6px) scale(1.02);
     border-color: rgb(var(--gold-500));
   }
 
   .card-gold {
     background: linear-gradient(135deg, rgb(var(--gold-500)), rgb(var(--gold-600)));
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
     padding: 2rem;
     color: rgb(var(--navy-950));
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-gold::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+  
+  .card-gold:hover::after {
+    width: 300px;
+    height: 300px;
   }
   
   .card-gold:hover {
-    box-shadow: 0 12px 32px rgba(var(--gold-600), 0.4);
-    transform: translateY(-4px);
-    filter: brightness(1.05);
+    box-shadow: 0 16px 40px rgba(var(--gold-600), 0.5), 0 8px 20px rgba(var(--gold-500), 0.3);
+    transform: translateY(-6px) scale(1.02);
+    filter: brightness(1.08);
+    border-color: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -382,7 +448,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.link-premium {
+  position: relative;
+  color: rgb(var(--navy-900));
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+
+.link-premium::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgb(var(--gold-500)), rgb(var(--gold-600)));
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-premium:hover::after {
+  width: 100%;
+}
+
+.link-premium:hover {
+  color: rgb(var(--gold-600));
 }
 
 img {
