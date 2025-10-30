@@ -29,6 +29,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-padding-top: 80px; /* Account for fixed header */
 }
 
 body {
@@ -398,18 +399,25 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .section-subtitle {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: rgb(var(--navy-900));
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     max-width: 48rem;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
   }
   
+  @media (min-width: 640px) {
+    .section-subtitle {
+      font-size: 1.125rem;
+    }
+  }
+  
   @media (min-width: 768px) {
     .section-subtitle {
       font-size: 1.25rem;
+      margin-bottom: 3rem;
     }
   }
 }
@@ -572,5 +580,53 @@ img {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Additional utility classes for premium feel */
+.text-gradient {
+  background: linear-gradient(135deg, rgb(var(--navy-900)), rgb(var(--gold-500)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-spacing {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-spacing {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
