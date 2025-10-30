@@ -28,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,6 +39,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,6 +74,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
+    min-height: 44px;
+    min-width: 44px;
     font-size: 1rem;
     font-weight: 600;
     color: white;
@@ -108,6 +114,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
+    min-height: 44px;
+    min-width: 44px;
     font-size: 1rem;
     font-weight: 600;
     color: rgb(var(--navy-950));
@@ -145,6 +153,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
+    min-height: 44px;
+    min-width: 44px;
     font-size: 1rem;
     font-weight: 600;
     color: rgb(var(--navy-900));
@@ -243,6 +253,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    width: 100%;
   }
   
   @media (min-width: 640px) {
@@ -252,19 +263,32 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .container-custom {
       padding-left: 2rem;
       padding-right: 2rem;
     }
   }
   
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+  
   .heading-display {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     color: rgb(var(--navy-950));
-    line-height: 1.1;
+    line-height: 1.15;
     letter-spacing: -0.02em;
+  }
+  
+  @media (min-width: 640px) {
+    .heading-display {
+      font-size: 2.5rem;
+    }
   }
   
   @media (min-width: 768px) {
@@ -276,15 +300,23 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 1024px) {
     .heading-display {
       font-size: 4.5rem;
+      line-height: 1.1;
     }
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     color: rgb(var(--navy-950));
     margin-bottom: 1rem;
     letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 640px) {
+    .section-title {
+      font-size: 2rem;
+    }
   }
   
   @media (min-width: 768px) {
