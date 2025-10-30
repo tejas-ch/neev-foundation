@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, memo } from "react";
 import { motion, useInView } from "framer-motion";
 
 interface AnimatedCounterProps {
@@ -11,7 +11,8 @@ interface AnimatedCounterProps {
   className?: string;
 }
 
-export const AnimatedCounter = ({ 
+// Memoized AnimatedCounter to prevent unnecessary re-renders
+export const AnimatedCounter = memo(({ 
   end, 
   duration = 2, 
   suffix = "", 
@@ -19,7 +20,7 @@ export const AnimatedCounter = ({
   className = ""
 }: AnimatedCounterProps) => {
   const [count, setCount] = useState(0);
-  const ref = useRef(null);
+  const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
@@ -30,7 +31,7 @@ export const AnimatedCounter = ({
 
     const animate = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
-      const progress = (timestamp - startTime) / (duration * 1000);
+      const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
 
       if (progress < 1) {
         setCount(Math.floor(end * progress));
@@ -54,7 +55,7 @@ export const AnimatedCounter = ({
       {prefix}{count}{suffix}
     </span>
   );
-};
+});
 
 interface StatCardProps {
   number: string;
@@ -64,7 +65,8 @@ interface StatCardProps {
   gradient?: string;
 }
 
-export const StatCard = ({ number, label, icon, index, gradient = "from-primary-500 to-primary-700" }: StatCardProps) => {
+// Memoized StatCard to prevent unnecessary re-renders
+export const StatCard = memo(({ number, label, icon, index, gradient = "from-primary-500 to-primary-700" }: StatCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50, scale: 0.8 }}
@@ -78,8 +80,6 @@ export const StatCard = ({ number, label, icon, index, gradient = "from-primary-
       viewport={{ once: true }}
       whileHover={{ 
         scale: 1.05,
-        rotateY: 5,
-        rotateX: 5,
       }}
       className="relative group"
     >
@@ -141,7 +141,7 @@ export const StatCard = ({ number, label, icon, index, gradient = "from-primary-
       </div>
     </motion.div>
   );
-};
+});
 
 interface ProgressBarProps {
   percentage: number;
@@ -150,9 +150,10 @@ interface ProgressBarProps {
   delay?: number;
 }
 
-export const AnimatedProgressBar = ({ percentage, label, color = "bg-primary-500", delay = 0 }: ProgressBarProps) => {
+// Memoized AnimatedProgressBar to prevent unnecessary re-renders
+export const AnimatedProgressBar = memo(({ percentage, label, color = "bg-primary-500", delay = 0 }: ProgressBarProps) => {
   const [progress, setProgress] = useState(0);
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
@@ -183,4 +184,4 @@ export const AnimatedProgressBar = ({ percentage, label, color = "bg-primary-500
       </div>
     </div>
   );
-};
+});

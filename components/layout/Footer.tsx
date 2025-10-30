@@ -1,31 +1,34 @@
 "use client";
 
+import { useMemo, useCallback } from "react";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowUp, FaRocket, FaStar, FaTrophy } from "react-icons/fa";
 import siteConfig from "@/data/siteConfig.json";
 import { getAssetPath } from "@/lib/utils";
 
 const Footer = () => {
-  const scrollToTop = () => {
+  // Memoize scroll function
+  const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  }, []);
 
-  const quickLinks = [
+  // Memoize static arrays to avoid recreation
+  const quickLinks = useMemo(() => [
     { name: "Home", href: "/" },
     { name: "Courses", href: "/courses" },
     { name: "Faculty", href: "/faculty" },
     { name: "Results", href: "/results" },
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },
-  ];
+  ], []);
 
-  const courses = [
+  const courses = useMemo(() => [
     "Foundation Course (6-10)",
     "JEE Preparation",
     "NEET Preparation",
     "Board Excellence",
     "Olympiad & NTSE",
-  ];
+  ], []);
 
   return (
     <footer className="relative overflow-hidden">

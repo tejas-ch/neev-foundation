@@ -91,7 +91,7 @@ export const PremiumTestimonialsCarousel = () => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % premiumTestimonials.length);
-    }, 5000);
+    }, 6000); // Increased from 5s to 6s to reduce frequency
 
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
@@ -110,32 +110,10 @@ export const PremiumTestimonialsCarousel = () => {
 
   return (
     <section className="py-20 bg-gradient-to-br from-primary-50 via-white to-accent-50 relative overflow-hidden">
-      {/* Background decorations */}
+      {/* Background decorations - Simplified animations for better performance */}
       <div className="absolute inset-0 opacity-5" style={{backgroundImage: getBackgroundImageUrl('/images/patterns/dots.svg')}}></div>
-      <motion.div
-        animate={{ 
-          rotate: 360,
-          scale: [1, 1.1, 1]
-        }}
-        transition={{ 
-          duration: 20, 
-          repeat: Infinity, 
-          ease: "linear"
-        }}
-        className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-primary-200 to-accent-200 rounded-full opacity-20"
-      ></motion.div>
-      <motion.div
-        animate={{ 
-          rotate: -360,
-          scale: [1, 0.9, 1]
-        }}
-        transition={{ 
-          duration: 25, 
-          repeat: Infinity, 
-          ease: "linear"
-        }}
-        className="absolute bottom-10 left-10 w-24 h-24 bg-gradient-to-br from-accent-200 to-primary-200 rounded-full opacity-20"
-      ></motion.div>
+      <div className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-primary-200 to-accent-200 rounded-full opacity-20"></div>
+      <div className="absolute bottom-10 left-10 w-24 h-24 bg-gradient-to-br from-accent-200 to-primary-200 rounded-full opacity-20"></div>
 
       <div className="container-custom relative z-10">
         <motion.div

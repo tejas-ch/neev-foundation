@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, memo, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { 
@@ -142,27 +142,28 @@ const iconMap: any = {
   FaBolt,
 };
 
+// Memoize helper functions outside component to avoid recreation
+const getDifficultyColor = (difficulty: string) => {
+  switch (difficulty) {
+    case "Beginner": return "bg-green-100 text-green-800";
+    case "Intermediate": return "bg-yellow-100 text-yellow-800";
+    case "Advanced": return "bg-red-100 text-red-800";
+    default: return "bg-gray-100 text-gray-800";
+  }
+};
+
+const getModeColor = (mode: string) => {
+  switch (mode) {
+    case "Online": return "bg-blue-100 text-blue-800";
+    case "Offline": return "bg-purple-100 text-purple-800";
+    case "Hybrid": return "bg-orange-100 text-orange-800";
+    default: return "bg-gray-100 text-gray-800";
+  }
+};
+
 const CourseCard = ({ course, index }: { course: Course; index: number }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const Icon = iconMap[course.icon] || FaBookReader;
-
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty) {
-      case "Beginner": return "bg-green-100 text-green-800";
-      case "Intermediate": return "bg-yellow-100 text-yellow-800";
-      case "Advanced": return "bg-red-100 text-red-800";
-      default: return "bg-gray-100 text-gray-800";
-    }
-  };
-
-  const getModeColor = (mode: string) => {
-    switch (mode) {
-      case "Online": return "bg-blue-100 text-blue-800";
-      case "Offline": return "bg-purple-100 text-purple-800";
-      case "Hybrid": return "bg-orange-100 text-orange-800";
-      default: return "bg-gray-100 text-gray-800";
-    }
-  };
 
   return (
     <motion.div
@@ -348,19 +349,22 @@ export default function PremiumCoursesPage() {
   const [filter, setFilter] = useState("All");
   const [sortBy, setSortBy] = useState("Popular");
   
-  const filteredCourses = premiumCourses.filter(course => {
-    if (filter === "All") return true;
-    return course.difficulty === filter;
-  });
+  // Memoize filtered and sorted courses to avoid recalculation on every render
+  const sortedCourses = useMemo(() => {
+    const filteredCourses = premiumCourses.filter(course => {
+      if (filter === "All") return true;
+      return course.difficulty === filter;
+    });
 
-  const sortedCourses = [...filteredCourses].sort((a, b) => {
-    switch (sortBy) {
-      case "Price": return parseInt(a.price.replace(/[^0-9]/g, '')) - parseInt(b.price.replace(/[^0-9]/g, ''));
-      case "Rating": return b.rating - a.rating;
-      case "Students": return b.studentsEnrolled - a.studentsEnrolled;
-      default: return 0;
-    }
-  });
+    return [...filteredCourses].sort((a, b) => {
+      switch (sortBy) {
+        case "Price": return parseInt(a.price.replace(/[^0-9]/g, '')) - parseInt(b.price.replace(/[^0-9]/g, ''));
+        case "Rating": return b.rating - a.rating;
+        case "Students": return b.studentsEnrolled - a.studentsEnrolled;
+        default: return 0;
+      }
+    });
+  }, [filter, sortBy]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">

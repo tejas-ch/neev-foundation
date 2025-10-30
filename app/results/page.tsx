@@ -1,21 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { FaTrophy, FaMedal, FaStar } from "react-icons/fa";
 import topPerformers from "@/data/topPerformers.json";
-import { processImageData, getAssetPath } from "@/lib/utils";
+import { getAssetPath } from "@/lib/utils";
 
 export default function ResultsPage() {
   const [selectedYear, setSelectedYear] = useState("2024");
   
   const years = ["2024"];
-  // Process image data at render time to ensure basePath is applied
-  const processedToppers = topPerformers.map(topper => ({
-    ...topper,
-    image: getAssetPath(topper.image)
-  }));
-  const filteredToppers = processedToppers.filter((topper) => topper.year.toString() === selectedYear);
+  
+  // Memoize processed toppers to avoid re-processing on every render
+  const processedToppers = useMemo(() => 
+    topPerformers.map(topper => ({
+      ...topper,
+      image: getAssetPath(topper.image)
+    })),
+  []);
+  
+  // Memoize filtered toppers based on selected year
+  const filteredToppers = useMemo(() => 
+    processedToppers.filter((topper) => topper.year.toString() === selectedYear),
+    [processedToppers, selectedYear]
+  );
 
   return (
     <div>

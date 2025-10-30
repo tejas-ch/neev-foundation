@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes, FaPhone, FaEnvelope, FaMapMarkerAlt, FaRocket } from "react-icons/fa";
@@ -12,21 +12,34 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
+    
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrolled(window.scrollY > 50);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener("scroll", handleScroll);
+    
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
+  // Memoize navLinks to avoid recreation on every render
+  const navLinks = useMemo(() => [
     { name: "Home", href: "/" },
     { name: "Courses", href: "/courses" },
     { name: "Faculty", href: "/faculty" },
     { name: "Results", href: "/results" },
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },
-  ];
+  ], []);
+
+  // Memoize toggle function to prevent recreation
+  const toggleMenu = useCallback(() => setIsOpen(prev => !prev), []);
 
   return (
     <>
@@ -114,7 +127,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={toggleMenu}
             className="lg:hidden text-primary-700 hover:text-gold-600 transition-colors p-2"
             aria-label="Toggle menu"
           >

@@ -1,5 +1,6 @@
 "use client";
 
+import { memo, useMemo } from "react";
 import { motion } from "framer-motion";
 import { FaAward, FaCertificate, FaMedal, FaTrophy, FaStar, FaCrown } from "react-icons/fa";
 
@@ -57,7 +58,11 @@ const certifications = [
   "Quality Education Standard"
 ];
 
-export const AwardsAndCertifications = () => {
+export const AwardsAndCertifications = memo(() => {
+  // Memoize static data to avoid recreation
+  const memoizedAwards = useMemo(() => awards, []);
+  const memoizedCertifications = useMemo(() => certifications, []);
+
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background decorations */}
@@ -81,11 +86,11 @@ export const AwardsAndCertifications = () => {
 
         {/* Awards Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {awards.map((award, index) => (
+          {memoizedAwards.map((award, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50, rotateY: -15 }}
-              whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ 
                 duration: 0.6, 
                 delay: index * 0.1,
@@ -94,10 +99,7 @@ export const AwardsAndCertifications = () => {
               }}
               viewport={{ once: true }}
               whileHover={{ 
-                scale: 1.05, 
-                rotateY: 5, 
-                rotateX: 5,
-                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+                scale: 1.05,
               }}
               className="group relative"
             >
@@ -159,7 +161,7 @@ export const AwardsAndCertifications = () => {
             </h3>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-              {certifications.map((cert, index) => (
+              {memoizedCertifications.map((cert, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
@@ -180,4 +182,4 @@ export const AwardsAndCertifications = () => {
       </div>
     </section>
   );
-};
+});
