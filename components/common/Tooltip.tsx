@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, useId } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface TooltipProps {
@@ -11,6 +11,7 @@ interface TooltipProps {
 
 /**
  * Tooltip component for helpful hints and additional information
+ * Implements proper ARIA patterns for accessibility
  */
 export default function Tooltip({
   children,
@@ -18,6 +19,7 @@ export default function Tooltip({
   position = "top",
 }: TooltipProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const tooltipId = useId();
 
   const positionClasses = {
     top: "bottom-full left-1/2 -translate-x-1/2 mb-2",
@@ -33,12 +35,14 @@ export default function Tooltip({
       onMouseLeave={() => setIsVisible(false)}
       onFocus={() => setIsVisible(true)}
       onBlur={() => setIsVisible(false)}
+      aria-describedby={isVisible ? tooltipId : undefined}
     >
       {children}
       
       <AnimatePresence>
         {isVisible && (
           <motion.div
+            id={tooltipId}
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}

@@ -26,10 +26,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-height: 80px;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scroll-padding-top: 80px; /* Account for fixed header */
+  scroll-padding-top: var(--header-height); /* Account for fixed header */
 }
 
 body {

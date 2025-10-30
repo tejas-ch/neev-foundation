@@ -14,6 +14,7 @@ interface OptimizedImageProps {
 /**
  * Optimized image component with lazy loading and fade-in animation
  * Provides better UX with loading states
+ * Note: Uses 'animate-shimmer' class from globals.css for loading animation
  */
 export default function OptimizedImage({
   src,
@@ -27,7 +28,7 @@ export default function OptimizedImage({
 
   return (
     <div className={`relative overflow-hidden ${className}`}>
-      {/* Loading skeleton */}
+      {/* Loading skeleton - requires animate-shimmer from globals.css */}
       {!isLoaded && !hasError && (
         <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-shimmer"></div>
       )}
