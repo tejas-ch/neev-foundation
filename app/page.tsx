@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { 
@@ -25,7 +26,7 @@ import siteConfig from "@/data/siteConfig.json";
 import courses from "@/data/courses.json";
 import topPerformers from "@/data/topPerformers.json";
 import testimonials from "@/data/testimonials.json";
-import { processImageData, getBackgroundImageUrl, getAssetPath } from "@/lib/utils";
+import { getBackgroundImageUrl, getAssetPath } from "@/lib/utils";
 
 const iconMap: any = {
   FaBookReader,
@@ -37,12 +38,14 @@ const iconMap: any = {
 };
 
 export default function Home() {
-  const featuredCourses = courses.slice(0, 4);
-  // Process image data at render time to ensure basePath is applied
-  const recentToppers = topPerformers.slice(0, 6).map(topper => ({
-    ...topper,
-    image: getAssetPath(topper.image)
-  }));
+  // Memoize expensive operations to avoid recalculating on every render
+  const featuredCourses = useMemo(() => courses.slice(0, 4), []);
+  const recentToppers = useMemo(() => 
+    topPerformers.slice(0, 6).map(topper => ({
+      ...topper,
+      image: getAssetPath(topper.image)
+    })), 
+  []);
 
   return (
     <div className="overflow-hidden">

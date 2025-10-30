@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { 
@@ -348,19 +348,22 @@ export default function PremiumCoursesPage() {
   const [filter, setFilter] = useState("All");
   const [sortBy, setSortBy] = useState("Popular");
   
-  const filteredCourses = premiumCourses.filter(course => {
-    if (filter === "All") return true;
-    return course.difficulty === filter;
-  });
+  // Memoize filtered and sorted courses to avoid recalculation on every render
+  const sortedCourses = useMemo(() => {
+    const filteredCourses = premiumCourses.filter(course => {
+      if (filter === "All") return true;
+      return course.difficulty === filter;
+    });
 
-  const sortedCourses = [...filteredCourses].sort((a, b) => {
-    switch (sortBy) {
-      case "Price": return parseInt(a.price.replace(/[^0-9]/g, '')) - parseInt(b.price.replace(/[^0-9]/g, ''));
-      case "Rating": return b.rating - a.rating;
-      case "Students": return b.studentsEnrolled - a.studentsEnrolled;
-      default: return 0;
-    }
-  });
+    return [...filteredCourses].sort((a, b) => {
+      switch (sortBy) {
+        case "Price": return parseInt(a.price.replace(/[^0-9]/g, '')) - parseInt(b.price.replace(/[^0-9]/g, ''));
+        case "Rating": return b.rating - a.rating;
+        case "Students": return b.studentsEnrolled - a.studentsEnrolled;
+        default: return 0;
+      }
+    });
+  }, [filter, sortBy]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
