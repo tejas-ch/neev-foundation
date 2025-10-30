@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { 
   FaBookReader, 
   FaGraduationCap, 
@@ -20,8 +21,23 @@ import {
   FaFire
 } from "react-icons/fa";
 import { StatCard, AnimatedProgressBar } from "@/components/AnimatedComponents";
-import { PremiumTestimonialsCarousel } from "@/components/PremiumTestimonials";
-import { AwardsAndCertifications } from "@/components/AwardsAndCertifications";
+
+// Lazy load heavy components for better initial load performance
+const PremiumTestimonialsCarousel = dynamic(
+  () => import("@/components/PremiumTestimonials").then(mod => ({ default: mod.PremiumTestimonialsCarousel })),
+  { 
+    ssr: false,
+    loading: () => <div className="py-20 bg-gradient-to-br from-primary-50 via-white to-accent-50 text-center">Loading testimonials...</div>
+  }
+);
+
+const AwardsAndCertifications = dynamic(
+  () => import("@/components/AwardsAndCertifications").then(mod => ({ default: mod.AwardsAndCertifications })),
+  { 
+    ssr: false,
+    loading: () => <div className="py-20 bg-gradient-to-br from-gray-50 to-white text-center">Loading awards...</div>
+  }
+);
 import siteConfig from "@/data/siteConfig.json";
 import courses from "@/data/courses.json";
 import topPerformers from "@/data/topPerformers.json";

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { motion } from "framer-motion";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import siteConfig from "@/data/siteConfig.json";
@@ -15,14 +15,15 @@ export default function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
+  // Memoize callback functions to prevent recreating on every render
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData(prev => ({
+      ...prev,
       [e.target.name]: e.target.value
-    });
-  };
+    }));
+  }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = useCallback((e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission (you can integrate with a backend or email service)
     console.log("Form submitted:", formData);
@@ -31,7 +32,7 @@ export default function ContactPage() {
       setSubmitted(false);
       setFormData({ name: "", email: "", phone: "", course: "", message: "" });
     }, 3000);
-  };
+  }, [formData]);
 
   return (
     <div>

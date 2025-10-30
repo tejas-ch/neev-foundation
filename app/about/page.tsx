@@ -1,12 +1,14 @@
 "use client";
 
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { FaEye, FaBullseye, FaHeart, FaStar, FaRocket, FaUserGraduate } from "react-icons/fa";
 import Link from "next/link";
 import { getAssetPath } from "@/lib/utils";
 
 export default function AboutPage() {
-  const values = [
+  // Memoize static data to avoid recreation on every render
+  const values = useMemo(() => [
     {
       icon: FaStar,
       title: "Excellence",
@@ -27,16 +29,16 @@ export default function AboutPage() {
       title: "Student-Centric",
       description: "Every decision we make is focused on student success and well-being."
     }
-  ];
+  ], []);
 
-  const milestones = [
+  const milestones = useMemo(() => [
     { year: "2016", event: "NEEV Foundation born from Pi Square Coaching" },
     { year: "2017", event: "First batch of 25 students" },
     { year: "2019", event: "Expanded to foundation & board programs" },
     { year: "2021", event: "Achieved 90%+ board exam success rate" },
     { year: "2023", event: "Introduced small batch methodology" },
     { year: "2024", event: "500+ students with excellent board results" }
-  ];
+  ], []);
 
   return (
     <div>

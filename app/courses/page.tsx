@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, memo, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { 
@@ -142,27 +142,28 @@ const iconMap: any = {
   FaBolt,
 };
 
+// Memoize helper functions outside component to avoid recreation
+const getDifficultyColor = (difficulty: string) => {
+  switch (difficulty) {
+    case "Beginner": return "bg-green-100 text-green-800";
+    case "Intermediate": return "bg-yellow-100 text-yellow-800";
+    case "Advanced": return "bg-red-100 text-red-800";
+    default: return "bg-gray-100 text-gray-800";
+  }
+};
+
+const getModeColor = (mode: string) => {
+  switch (mode) {
+    case "Online": return "bg-blue-100 text-blue-800";
+    case "Offline": return "bg-purple-100 text-purple-800";
+    case "Hybrid": return "bg-orange-100 text-orange-800";
+    default: return "bg-gray-100 text-gray-800";
+  }
+};
+
 const CourseCard = ({ course, index }: { course: Course; index: number }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const Icon = iconMap[course.icon] || FaBookReader;
-
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty) {
-      case "Beginner": return "bg-green-100 text-green-800";
-      case "Intermediate": return "bg-yellow-100 text-yellow-800";
-      case "Advanced": return "bg-red-100 text-red-800";
-      default: return "bg-gray-100 text-gray-800";
-    }
-  };
-
-  const getModeColor = (mode: string) => {
-    switch (mode) {
-      case "Online": return "bg-blue-100 text-blue-800";
-      case "Offline": return "bg-purple-100 text-purple-800";
-      case "Hybrid": return "bg-orange-100 text-orange-800";
-      default: return "bg-gray-100 text-gray-800";
-    }
-  };
 
   return (
     <motion.div
